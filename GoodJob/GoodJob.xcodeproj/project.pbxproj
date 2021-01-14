@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B62AAC625B07481006CA057 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62AAC525B07481006CA057 /* HomeListView.swift */; };
+		5B62AACB25B07499006CA057 /* HomeListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B62AACA25B07499006CA057 /* HomeListView.xib */; };
+		5B62AAD225B0774B006CA057 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62AAD025B0774B006CA057 /* HomeTableViewCell.swift */; };
+		5B62AAD325B0774B006CA057 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B62AAD125B0774B006CA057 /* HomeTableViewCell.xib */; };
 		5BD66F5E25AFEFE8009D2CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66F5D25AFEFE8009D2CDC /* AppDelegate.swift */; };
 		5BD66F6025AFEFE9009D2CDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66F5F25AFEFE9009D2CDC /* SceneDelegate.swift */; };
-		5BD66F6225AFEFE9009D2CDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66F6125AFEFE9009D2CDC /* ViewController.swift */; };
-		5BD66F6525AFEFE9009D2CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD66F6325AFEFE9009D2CDC /* Main.storyboard */; };
 		5BD66F6725AFEFF3009D2CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD66F6625AFEFF3009D2CDC /* Assets.xcassets */; };
 		5BD66F6A25AFEFF3009D2CDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD66F6825AFEFF3009D2CDC /* LaunchScreen.storyboard */; };
-		5BD66F7525AFEFF5009D2CDC /* GoodJobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66F7425AFEFF5009D2CDC /* GoodJobTests.swift */; };
-		5BD66F8025AFEFF5009D2CDC /* GoodJobUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66F7F25AFEFF5009D2CDC /* GoodJobUITests.swift */; };
+		5BD66FA125AFF421009D2CDC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66FA025AFF421009D2CDC /* HomeViewController.swift */; };
+		5BD66FB325B004D4009D2CDC /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66FB225B004D4009D2CDC /* HeaderView.swift */; };
+		5BD66FBD25B00990009D2CDC /* Extension-uiview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66FBC25B00990009D2CDC /* Extension-uiview.swift */; };
+		5BD66FC225B00B4D009D2CDC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66FC125B00B4C009D2CDC /* Constant.swift */; };
+		5BD66FCA25B01D09009D2CDC /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD66FC925B01D09009D2CDC /* HeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +40,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B62AAC525B07481006CA057 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
+		5B62AACA25B07499006CA057 /* HomeListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeListView.xib; sourceTree = "<group>"; };
+		5B62AAD025B0774B006CA057 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		5B62AAD125B0774B006CA057 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		5BD66F5A25AFEFE8009D2CDC /* GoodJob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodJob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD66F5D25AFEFE8009D2CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BD66F5F25AFEFE9009D2CDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5BD66F6125AFEFE9009D2CDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5BD66F6425AFEFE9009D2CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BD66F6625AFEFF3009D2CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BD66F6925AFEFF3009D2CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BD66F6B25AFEFF3009D2CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BD66F7025AFEFF5009D2CDC /* GoodJobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodJobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BD66F7425AFEFF5009D2CDC /* GoodJobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJobTests.swift; sourceTree = "<group>"; };
-		5BD66F7625AFEFF5009D2CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BD66F7B25AFEFF5009D2CDC /* GoodJobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodJobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BD66F7F25AFEFF5009D2CDC /* GoodJobUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJobUITests.swift; sourceTree = "<group>"; };
-		5BD66F8125AFEFF5009D2CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BD66FA025AFF421009D2CDC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5BD66FB225B004D4009D2CDC /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		5BD66FBC25B00990009D2CDC /* Extension-uiview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-uiview.swift"; sourceTree = "<group>"; };
+		5BD66FC125B00B4C009D2CDC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5BD66FC925B01D09009D2CDC /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +84,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B62AACF25B07733006CA057 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5B62AAD025B0774B006CA057 /* HomeTableViewCell.swift */,
+				5B62AAD125B0774B006CA057 /* HomeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		5BD66F5125AFEFE8009D2CDC = {
 			isa = PBXGroup;
 			children = (
 				5BD66F5C25AFEFE8009D2CDC /* GoodJob */,
-				5BD66F7325AFEFF5009D2CDC /* GoodJobTests */,
-				5BD66F7E25AFEFF5009D2CDC /* GoodJobUITests */,
 				5BD66F5B25AFEFE8009D2CDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,33 +114,61 @@
 		5BD66F5C25AFEFE8009D2CDC /* GoodJob */ = {
 			isa = PBXGroup;
 			children = (
-				5BD66F5D25AFEFE8009D2CDC /* AppDelegate.swift */,
-				5BD66F5F25AFEFE9009D2CDC /* SceneDelegate.swift */,
-				5BD66F6125AFEFE9009D2CDC /* ViewController.swift */,
-				5BD66F6325AFEFE9009D2CDC /* Main.storyboard */,
-				5BD66F6625AFEFF3009D2CDC /* Assets.xcassets */,
-				5BD66F6825AFEFF3009D2CDC /* LaunchScreen.storyboard */,
-				5BD66F6B25AFEFF3009D2CDC /* Info.plist */,
+				5B62AACF25B07733006CA057 /* Cell */,
+				5BD66FA525AFF515009D2CDC /* View */,
+				5BD66F9F25AFF3F2009D2CDC /* Home */,
+				5BD66FA825AFF563009D2CDC /* Image */,
+				5BD66FA725AFF550009D2CDC /* Board */,
+				5BD66FA625AFF534009D2CDC /* Config */,
+				5BD66FBC25B00990009D2CDC /* Extension-uiview.swift */,
+				5BD66FC125B00B4C009D2CDC /* Constant.swift */,
 			);
 			path = GoodJob;
 			sourceTree = "<group>";
 		};
-		5BD66F7325AFEFF5009D2CDC /* GoodJobTests */ = {
+		5BD66F9F25AFF3F2009D2CDC /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				5BD66F7425AFEFF5009D2CDC /* GoodJobTests.swift */,
-				5BD66F7625AFEFF5009D2CDC /* Info.plist */,
+				5BD66FA025AFF421009D2CDC /* HomeViewController.swift */,
 			);
-			path = GoodJobTests;
+			path = Home;
 			sourceTree = "<group>";
 		};
-		5BD66F7E25AFEFF5009D2CDC /* GoodJobUITests */ = {
+		5BD66FA525AFF515009D2CDC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5BD66F7F25AFEFF5009D2CDC /* GoodJobUITests.swift */,
-				5BD66F8125AFEFF5009D2CDC /* Info.plist */,
+				5BD66FB225B004D4009D2CDC /* HeaderView.swift */,
+				5BD66FC925B01D09009D2CDC /* HeaderView.xib */,
+				5B62AAC525B07481006CA057 /* HomeListView.swift */,
+				5B62AACA25B07499006CA057 /* HomeListView.xib */,
 			);
-			path = GoodJobUITests;
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BD66FA625AFF534009D2CDC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5BD66F5F25AFEFE9009D2CDC /* SceneDelegate.swift */,
+				5BD66F5D25AFEFE8009D2CDC /* AppDelegate.swift */,
+				5BD66F6B25AFEFF3009D2CDC /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5BD66FA725AFF550009D2CDC /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				5BD66F6825AFEFF3009D2CDC /* LaunchScreen.storyboard */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		5BD66FA825AFF563009D2CDC /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				5BD66F6625AFEFF3009D2CDC /* Assets.xcassets */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +274,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD66FCA25B01D09009D2CDC /* HeaderView.xib in Resources */,
+				5B62AACB25B07499006CA057 /* HomeListView.xib in Resources */,
 				5BD66F6A25AFEFF3009D2CDC /* LaunchScreen.storyboard in Resources */,
+				5B62AAD325B0774B006CA057 /* HomeTableViewCell.xib in Resources */,
 				5BD66F6725AFEFF3009D2CDC /* Assets.xcassets in Resources */,
-				5BD66F6525AFEFE9009D2CDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BD66F6225AFEFE9009D2CDC /* ViewController.swift in Sources */,
+				5BD66FBD25B00990009D2CDC /* Extension-uiview.swift in Sources */,
+				5B62AAC625B07481006CA057 /* HomeListView.swift in Sources */,
 				5BD66F5E25AFEFE8009D2CDC /* AppDelegate.swift in Sources */,
 				5BD66F6025AFEFE9009D2CDC /* SceneDelegate.swift in Sources */,
+				5BD66FA125AFF421009D2CDC /* HomeViewController.swift in Sources */,
+				5BD66FB325B004D4009D2CDC /* HeaderView.swift in Sources */,
+				5B62AAD225B0774B006CA057 /* HomeTableViewCell.swift in Sources */,
+				5BD66FC225B00B4D009D2CDC /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +318,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BD66F7525AFEFF5009D2CDC /* GoodJobTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +325,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BD66F8025AFEFF5009D2CDC /* GoodJobUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +344,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5BD66F6325AFEFE9009D2CDC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5BD66F6425AFEFE9009D2CDC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5BD66F6825AFEFF3009D2CDC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,7 +478,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9RXFTNQ3L;
-				INFOPLIST_FILE = GoodJob/Info.plist;
+				INFOPLIST_FILE = GoodJob/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +497,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9RXFTNQ3L;
-				INFOPLIST_FILE = GoodJob/Info.plist;
+				INFOPLIST_FILE = GoodJob/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
