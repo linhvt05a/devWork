@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,28 +14,9 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="409" height="147"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2r-Jj-VpS">
-                        <rect key="frame" x="84.5" y="9.5" width="240" height="128"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="240" id="OHt-mt-vWN"/>
-                            <constraint firstAttribute="height" constant="128" id="ujb-Re-Thd"/>
-                        </constraints>
-                    </view>
-                </subviews>
-                <constraints>
-                    <constraint firstItem="x2r-Jj-VpS" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Yxg-HV-WV2"/>
-                    <constraint firstAttribute="bottom" secondItem="x2r-Jj-VpS" secondAttribute="bottom" constant="9.5" id="bB9-CL-ZOd"/>
-                    <constraint firstItem="x2r-Jj-VpS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pbG-Mx-2Zt"/>
-                </constraints>
+                <color key="backgroundColor" red="0.96862745098039216" green="0.98039215686274506" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             </tableViewCellContentView>
             <point key="canvasLocation" x="23.913043478260871" y="84.040178571428569"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

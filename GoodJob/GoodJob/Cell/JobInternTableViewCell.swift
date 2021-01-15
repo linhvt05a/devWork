@@ -10,12 +10,11 @@ import UIKit
 class JobInternTableViewCell: UITableViewCell {
     
     let itemView = ItemJobView.loadViewFromXib()
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        itemView.setupView()
         // Initialization code
         contentView.addSubview(itemView)
+        contentView.heightAnchor.constraint(equalTo: itemView.heightAnchor).isActive = true
     }
     
 }

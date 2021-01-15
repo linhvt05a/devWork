@@ -45,10 +45,10 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController :UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 9
+        return 10
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 || section == 1 {
+        if section == 0 || section == 1 || section == 9 {
             return 1
         }
         else {
@@ -100,14 +100,24 @@ extension HomeViewController :UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobPartTimeTableViewCell.self), for: indexPath) as! JobPartTimeTableViewCell
             return cell
         }
-        else {
+        
+        if indexPath.section == 8 {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobInternTableViewCell.self), for: indexPath) as! JobInternTableViewCell
+            return cell
+        }
+        
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: EmployerTableViewCell.self), for: indexPath) as! EmployerTableViewCell
             return cell
         }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        if indexPath.section == 9 {
+            return 200
+        }else {
+            return UITableView.automaticDimension
+        }
     }
     
 }
@@ -133,25 +143,31 @@ extension HomeViewController : UITableViewDelegate{
         
         if section == 5 {
             let sectionView = SectionHeaderView.loadViewFromXib()
-            sectionView.setupView(letfIcon: "icons8-money-bag-40-fill", title: "VIỆC LÀM QUẢN LÝ", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
+            sectionView.setupView(letfIcon: "icons8-customer-insights-manager-40", title: "VIỆC LÀM QUẢN LÝ", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
             return sectionView
         }
         
         if section == 6 {
             let sectionView = SectionHeaderView.loadViewFromXib()
-            sectionView.setupView(letfIcon: "icons8-money-bag-40-fill", title: "VIÊC LÀM IT", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
+            sectionView.setupView(letfIcon: "icons8-it-40", title: "VIÊC LÀM IT", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
             return sectionView
         }
         
         if section == 7 {
             let sectionView = SectionHeaderView.loadViewFromXib()
-            sectionView.setupView(letfIcon: "icons8-money-bag-40-fill", title: "VIỆC LÀM BÁN THỜI GIAN", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
+            sectionView.setupView(letfIcon: "icons8-new-job-40", title: "VIỆC LÀM BÁN THỜI GIAN", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
             return sectionView
         }
         
         if section == 8 {
             let sectionView = SectionHeaderView.loadViewFromXib()
-            sectionView.setupView(letfIcon: "icons8-money-bag-40-fill", title: "TUYỂN THỰC TẬP SINH", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
+            sectionView.setupView(letfIcon: "icons8-permanent-job-40 (1)", title: "TUYỂN THỰC TẬP SINH", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
+            return sectionView
+        }
+        
+        if section == 9 {
+            let sectionView = SectionHeaderView.loadViewFromXib()
+            sectionView.setupView(letfIcon: "icons8-flag-2-40", title: "NHÀ TUYỂN DỤNG NỔI BẬT", nextTitle: "", arrowIcon: "")
             return sectionView
         }
         else {
@@ -163,7 +179,7 @@ extension HomeViewController : UITableViewDelegate{
         if section == 0 || section == 1 {
             return 0
         }else {
-            return 65
+            return 56
         }
     }
 }

@@ -13,9 +13,9 @@ class JobManagerTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        itemView.setupView()
         // Initialization code
         contentView.addSubview(itemView)
+        contentView.heightAnchor.constraint(equalTo: itemView.heightAnchor).isActive = true
     }
     
 }

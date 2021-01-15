@@ -15,7 +15,7 @@ class JobFavoriteTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         contentView.addSubview(itemView)
-        itemView.height = contentView.height
+        contentView.heightAnchor.constraint(equalTo: itemView.heightAnchor).isActive = true
     }
   
 }

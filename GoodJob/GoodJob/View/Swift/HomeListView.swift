@@ -32,6 +32,8 @@ class HomeListView: UIView {
         homeList.register(UINib(nibName: String(describing: JobPartTimeTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: JobPartTimeTableViewCell.self))
         
         homeList.register(UINib(nibName: String(describing: JobInternTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: JobInternTableViewCell.self))
+        
+        homeList.register(UINib(nibName: String(describing: EmployerTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: EmployerTableViewCell.self))
     }
 
 }

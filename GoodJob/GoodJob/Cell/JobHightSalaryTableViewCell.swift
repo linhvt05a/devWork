@@ -9,12 +9,13 @@ import UIKit
 
 class JobHightSalaryTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var containerView: UIView!
-    
+  
     let itemView = ItemJobView.loadViewFromXib()
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        contentView.addSubview(itemView)
+        contentView.heightAnchor.constraint(equalTo: itemView.heightAnchor).isActive = true
     }
 
    

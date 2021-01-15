@@ -8,14 +8,13 @@
 import UIKit
 
 class JobHotListTableViewCell: UITableViewCell {
-    
-    let itemView = ItemJobView.loadViewFromXib()
-    
+
+    let view = ItemJobView.loadViewFromXib()
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        con.addSubview(itemView)
-        itemView.height = containerView.height
+        contentView.addSubview(view)
+        contentView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
+        view.setupView()
     }
     
 }
