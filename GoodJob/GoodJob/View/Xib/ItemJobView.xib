@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17701"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Crp-q7-fZP" customClass="ItemJobView" customModule="GoodJob" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="281"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYM-r3-nxY">
+                    <rect key="frame" x="10" y="10" width="394" height="261"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97832336476537252" green="0.98164772637094233" blue="0.98171336380476804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zYM-r3-nxY" secondAttribute="trailing" constant="10" id="oFr-Oa-Epj"/>
+                <constraint firstItem="zYM-r3-nxY" firstAttribute="top" secondItem="Crp-q7-fZP" secondAttribute="top" constant="10" id="rKs-mW-gvz"/>
+                <constraint firstAttribute="bottom" secondItem="zYM-r3-nxY" secondAttribute="bottom" constant="10" id="ssc-7T-XDx"/>
+                <constraint firstItem="zYM-r3-nxY" firstAttribute="leading" secondItem="Crp-q7-fZP" secondAttribute="leading" constant="10" id="uUE-Bd-uqF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="containerView" destination="zYM-r3-nxY" id="aBZ-OM-oLd"/>
+            </connections>
+            <point key="canvasLocation" x="286.95652173913044" y="-132.25446428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

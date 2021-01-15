@@ -18,34 +18,41 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dh-F8-SQX">
                         <rect key="frame" x="34" y="15.5" width="400" height="200"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0qx-RR-P90">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tintuyendung" translatesAutoresizingMaskIntoConstraints="NO" id="eDI-vr-Npe">
                                 <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="0qx-RR-P90" firstAttribute="top" secondItem="6dh-F8-SQX" secondAttribute="top" id="7bI-Pt-pIw"/>
+                            <constraint firstAttribute="trailing" secondItem="eDI-vr-Npe" secondAttribute="trailing" id="0Pa-Zi-mU9"/>
                             <constraint firstAttribute="width" constant="400" id="HQF-g6-RN8"/>
-                            <constraint firstItem="0qx-RR-P90" firstAttribute="leading" secondItem="6dh-F8-SQX" secondAttribute="leading" id="Jak-RB-cl5"/>
-                            <constraint firstAttribute="trailing" secondItem="0qx-RR-P90" secondAttribute="trailing" id="gbl-H5-FcZ"/>
-                            <constraint firstAttribute="bottom" secondItem="0qx-RR-P90" secondAttribute="bottom" id="mKv-al-BMt"/>
+                            <constraint firstAttribute="bottom" secondItem="eDI-vr-Npe" secondAttribute="bottom" id="JyY-hA-5Pf"/>
+                            <constraint firstItem="eDI-vr-Npe" firstAttribute="leading" secondItem="6dh-F8-SQX" secondAttribute="leading" id="eXl-y8-FnP"/>
                             <constraint firstAttribute="height" constant="200" id="qqE-5j-OYm"/>
+                            <constraint firstItem="eDI-vr-Npe" firstAttribute="top" secondItem="6dh-F8-SQX" secondAttribute="top" id="yZ1-YA-jP3"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="NO"/>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="10"/>
+                                <real key="value" value="0.0"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.9694559498654487" green="0.9694559498654487" blue="0.9694559498654487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="6dh-F8-SQX" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="BLi-U6-AYJ"/>
                     <constraint firstAttribute="bottom" secondItem="6dh-F8-SQX" secondAttribute="bottom" constant="15.5" id="kxV-eY-BGF"/>
                     <constraint firstItem="6dh-F8-SQX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zOd-wT-aMB"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="6dh-F8-SQX" id="Lki-nY-9a4"/>
+            </connections>
             <point key="canvasLocation" x="-278.26086956521743" y="142.29910714285714"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="tintuyendung" width="937" height="207"/>
+    </resources>
 </document>

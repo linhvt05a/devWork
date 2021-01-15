@@ -13,11 +13,10 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = #colorLiteral(red: 0.9764705882, green: 0.9764705882, blue: 0.9764705882, alpha: 1)
         navigationItem.titleView = headerView
         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        navigationController?.navigationBar.sendSubviewToBack(headerView)
         
         headerView.setupView(title: "Jobs News")
         headerView.leftBtn.addTarget(self, action: #selector(showProfile), for: .touchUpInside)
@@ -31,6 +30,7 @@ class HomeViewController: UIViewController {
         view.addSubview(homeView)
         homeView.homeList.dataSource = self
         homeView.homeList.delegate = self
+        homeView.center = view.center
         homeView.registerCell()
     }
     
@@ -45,10 +45,16 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController :UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 9
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        if section == 0 || section == 1 {
+            return 1
+        }
+        else {
+            return 2
+        }
+       
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -64,17 +70,105 @@ extension HomeViewController :UITableViewDataSource {
             cell.jobtitleDelegate = self
             return cell
         }
+        
+        if indexPath.section == 2 {
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobHotListTableViewCell.self), for: indexPath) as! JobHotListTableViewCell
+        return cell
+        }
+        
+        if indexPath.section == 3 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobFavoriteTableViewCell.self), for: indexPath) as! JobFavoriteTableViewCell
+            return cell
+        }
+        
+        if indexPath.section == 4 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobHightSalaryTableViewCell.self), for: indexPath) as! JobHightSalaryTableViewCell
+            return cell
+        }
+        
+        if indexPath.section == 5 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobManagerTableViewCell.self), for: indexPath) as! JobManagerTableViewCell
+            return cell
+        }
+        
+        if indexPath.section == 6 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobITTableViewCell.self), for: indexPath) as! JobITTableViewCell
+            return cell
+        }
+        
+        if indexPath.section == 7 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobPartTimeTableViewCell.self), for: indexPath) as! JobPartTimeTableViewCell
+            return cell
+        }
         else {
-            return UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobInternTableViewCell.self), for: indexPath) as! JobInternTableViewCell
+            return cell
         }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+    
 }
 
-extension HomeViewController :UITableViewDelegate, SearchLocationDelegate, SearchJobTitleDelegate {
+extension HomeViewController : UITableViewDelegate{
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 2 {
+            let sectionView = SectionHeaderView.loadViewFromXib()
+            sectionView.setupView(letfIcon: "icons8-start-40", title: "VIỆC LÀM TỐT NHẤT", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
+            return sectionView
+        }
+        if section == 3 {
+            let sectionView = SectionHeaderView.loadViewFromXib()
+            sectionView.setupView(letfIcon: "icons8-heart-40", title: "VIỆC LÀM HẤP DẪN", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
+            return sectionView
+        }
+        
+        if section == 4 {
+            let sectionView = SectionHeaderView.loadViewFromXib()
+            sectionView.setupView(letfIcon: "icons8-money-bag-40-fill", title: "VIỆC LÀM LƯƠNG CAO", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
+            return sectionView
+        }
+        
+        if section == 5 {
+            let sectionView = SectionHeaderView.loadViewFromXib()
+            sectionView.setupView(letfIcon: "icons8-money-bag-40-fill", title: "VIỆC LÀM QUẢN LÝ", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
+            return sectionView
+        }
+        
+        if section == 6 {
+            let sectionView = SectionHeaderView.loadViewFromXib()
+            sectionView.setupView(letfIcon: "icons8-money-bag-40-fill", title: "VIÊC LÀM IT", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
+            return sectionView
+        }
+        
+        if section == 7 {
+            let sectionView = SectionHeaderView.loadViewFromXib()
+            sectionView.setupView(letfIcon: "icons8-money-bag-40-fill", title: "VIỆC LÀM BÁN THỜI GIAN", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
+            return sectionView
+        }
+        
+        if section == 8 {
+            let sectionView = SectionHeaderView.loadViewFromXib()
+            sectionView.setupView(letfIcon: "icons8-money-bag-40-fill", title: "TUYỂN THỰC TẬP SINH", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40")
+            return sectionView
+        }
+        else {
+            return nil
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 || section == 1 {
+            return 0
+        }else {
+            return 65
+        }
+    }
+}
+
+extension HomeViewController : SearchLocationDelegate, SearchJobTitleDelegate {
     func gotolocationVC() {
         print("location show vc")
     }
@@ -85,5 +179,6 @@ extension HomeViewController :UITableViewDelegate, SearchLocationDelegate, Searc
     
     
 }
+
 
 

@@ -9,13 +9,22 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var containerView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.backgroundColor = #colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 0.9607843137, alpha: 1)
         self.selectionStyle = .none
+        
+        setupView()
     }
 
+    func setupView(){
+        containerView.cornerRadius = 8
+        containerView.shadow = true
+        containerView.radius(shadowColor: UIColor.green.cgColor, shadowOffset: CGSize(width: 3, height: 3), shadowOpacity: 0.7, shadowRadius: 3,boderWidth: 1, boderColor: UIColor.green.cgColor, backGroundColor: UIColor.white.cgColor)
+    }
+    
   
     
 }
