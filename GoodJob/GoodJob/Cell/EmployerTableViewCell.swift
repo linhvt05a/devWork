@@ -27,7 +27,6 @@ class EmployerTableViewCell: UITableViewCell {
         
         employerList.register(UINib(nibName: String(describing: EmployerCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: EmployerCollectionViewCell.self))
         setupGridView()
-//        startTimer()
     }
     func setupView() {
         let H = self.caculatorWidth()
@@ -42,23 +41,6 @@ class EmployerTableViewCell: UITableViewCell {
         flow.minimumInteritemSpacing = cellMarginsize
         flow.sectionInset = UIEdgeInsets(top: 0, left: cellMarginsize, bottom: 0, right: cellMarginsize)
     }
-    
-//    func startTimer() {
-//        let _ = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(scrollToNextCell), userInfo: nil, repeats: true);
-//
-//
-//    }
-    
-//    @objc func scrollToNextCell(){
-//
-//        if currenIndex < arr.count - 1 {
-//            currenIndex = currenIndex + 1
-//        }else {
-//            currenIndex = 0
-//        }
-//        employerList.scrollToItem(at: IndexPath(item: currenIndex, section: 0), at: .right, animated: true)
-//
-//    }
     
 }
 

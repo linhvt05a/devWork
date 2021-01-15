@@ -11,6 +11,9 @@ class HomeViewController: UIViewController {
     
     let headerView = HeaderView.loadViewFromXib()
     let homeView = HomeListView.loadViewFromXib()
+    let scrollView = ScrollableView.loadViewFromXib()
+    let arr = ["","","","","","","","","","","","","","","","","","","",""]
+    var currenIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,18 +26,41 @@ class HomeViewController: UIViewController {
         headerView.setupView(title: "Jobs News")
         headerView.leftBtn.addTarget(self, action: #selector(showProfile), for: .touchUpInside)
         headerView.rightBtn.addTarget(self, action: #selector(showLogin), for: .touchUpInside)
-        
         config()
-        
-        
+        startTimer()
+    }
+    
+    func startTimer() {
+        let _ = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(scrollToNextCell), userInfo: nil, repeats: true);
+
+    }
+    
+    @objc func scrollToNextCell(){
+
+        if currenIndex < arr.count - 1 {
+            currenIndex = currenIndex + 1
+        }else {
+            currenIndex = 0
+        }
+        scrollView.swiperView.scrollToItem(at: IndexPath(item: currenIndex, section: 0), at: .right, animated: true)
+
     }
     
     func config(){
+        view.addSubview(scrollView)
+        scrollView.swiperView.dataSource = self
+        scrollView.swiperView.delegate = self
+        scrollView.registerCell()
+
         view.addSubview(homeView)
         homeView.homeList.dataSource = self
         homeView.homeList.delegate = self
-        homeView.center = view.center
         homeView.registerCell()
+        homeView.width = view.width
+        homeView.left = view.left
+        homeView.right = view.right
+        homeView.top = scrollView.bottom
+       
     }
     
     @objc func showProfile(){
@@ -44,6 +70,23 @@ class HomeViewController: UIViewController {
         print("vui long login")
     }
    
+}
+
+extension HomeViewController : UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return arr.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: ScrollViewCollectionViewCell.self), for: indexPath) as! ScrollViewCollectionViewCell
+    
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height)
+    }
+    
 }
 
 extension HomeViewController :UITableViewDataSource {
