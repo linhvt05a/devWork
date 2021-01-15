@@ -22,8 +22,18 @@ class SectionHeaderView: UIView {
     func setupView(letfIcon: String, title: String, nextTitle: String, arrowIcon: String ){
         sectionIcon.image = UIImage(named: letfIcon)
         sectionTitle.text = title
-        sectionDetail.text = nextTitle
-        sectionRowIcon.image = UIImage(named: arrowIcon)
+        
+        if nextTitle != "" {
+            sectionDetail.text = nextTitle
+        }else {
+            sectionDetail.isHidden = true
+        }
+        
+        if  arrowIcon != "" {
+            sectionRowIcon.image = UIImage(named: arrowIcon)
+        }else {
+            sectionRowIcon.isHidden = true
+        }
         
         sectionView.cornerRadius = 8
         sectionView.shadow = true

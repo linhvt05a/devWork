@@ -15,8 +15,6 @@
 		5B1BBAC425B1AD7C000BFA55 /* EmployerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B1BBAC225B1AD7C000BFA55 /* EmployerCollectionViewCell.xib */; };
 		5B62AAC625B07481006CA057 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62AAC525B07481006CA057 /* HomeListView.swift */; };
 		5B62AACB25B07499006CA057 /* HomeListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B62AACA25B07499006CA057 /* HomeListView.xib */; };
-		5B62AAD225B0774B006CA057 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62AAD025B0774B006CA057 /* HomeTableViewCell.swift */; };
-		5B62AAD325B0774B006CA057 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B62AAD125B0774B006CA057 /* HomeTableViewCell.xib */; };
 		5BD66F5E25AFEFE8009D2CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66F5D25AFEFE8009D2CDC /* AppDelegate.swift */; };
 		5BD66F6025AFEFE9009D2CDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66F5F25AFEFE9009D2CDC /* SceneDelegate.swift */; };
 		5BD66F6725AFEFF3009D2CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD66F6625AFEFF3009D2CDC /* Assets.xcassets */; };
@@ -72,8 +70,6 @@
 		5B1BBAC225B1AD7C000BFA55 /* EmployerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployerCollectionViewCell.xib; sourceTree = "<group>"; };
 		5B62AAC525B07481006CA057 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
 		5B62AACA25B07499006CA057 /* HomeListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeListView.xib; sourceTree = "<group>"; };
-		5B62AAD025B0774B006CA057 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		5B62AAD125B0774B006CA057 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		5BD66F5A25AFEFE8009D2CDC /* GoodJob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodJob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD66F5D25AFEFE8009D2CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BD66F5F25AFEFE9009D2CDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +131,6 @@
 		5B15BCB225B07F1A00933BBE /* CellXib */ = {
 			isa = PBXGroup;
 			children = (
-				5B62AAD125B0774B006CA057 /* HomeTableViewCell.xib */,
 				5B15BCBA25B0835A00933BBE /* SearchJobTableViewCell.xib */,
 				5BE6CA5825B14962008CC282 /* JobHotListTableViewCell.xib */,
 				5BE6CA6225B14B03008CC282 /* JobFavoriteTableViewCell.xib */,
@@ -153,7 +148,6 @@
 		5B62AACF25B07733006CA057 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				5B62AAD025B0774B006CA057 /* HomeTableViewCell.swift */,
 				5B15BCB925B0835A00933BBE /* SearchJobTableViewCell.swift */,
 				5BE6CA5725B14962008CC282 /* JobHotListTableViewCell.swift */,
 				5BE6CA6125B14B03008CC282 /* JobFavoriteTableViewCell.swift */,
@@ -381,7 +375,6 @@
 				5BE6CA7125B14D33008CC282 /* SectionHeaderView.xib in Resources */,
 				5BE6CA9D25B160BB008CC282 /* JobInternTableViewCell.xib in Resources */,
 				5BD66F6A25AFEFF3009D2CDC /* LaunchScreen.storyboard in Resources */,
-				5B62AAD325B0774B006CA057 /* HomeTableViewCell.xib in Resources */,
 				5B1BBAB425B1A6AF000BFA55 /* EmployerTableViewCell.xib in Resources */,
 				5BE6CA5A25B14963008CC282 /* JobHotListTableViewCell.xib in Resources */,
 				5BE6CA9625B1609A008CC282 /* JobPartTimeTableViewCell.xib in Resources */,
@@ -428,7 +421,6 @@
 				5BE6CA6325B14B03008CC282 /* JobFavoriteTableViewCell.swift in Sources */,
 				5BD66FB325B004D4009D2CDC /* HeaderView.swift in Sources */,
 				5BE6CA9525B1609A008CC282 /* JobPartTimeTableViewCell.swift in Sources */,
-				5B62AAD225B0774B006CA057 /* HomeTableViewCell.swift in Sources */,
 				5BD66FC225B00B4D009D2CDC /* Constant.swift in Sources */,
 				5B1BBAB325B1A6AF000BFA55 /* EmployerTableViewCell.swift in Sources */,
 			);
