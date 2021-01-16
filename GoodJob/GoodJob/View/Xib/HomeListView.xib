@@ -19,16 +19,16 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="AzR-zA-T0i" secondAttribute="bottom" id="9g9-f2-zMb"/>
-                <constraint firstItem="AzR-zA-T0i" firstAttribute="top" secondItem="59b-jh-DuI" secondAttribute="top" id="Gl9-iK-PRm"/>
-                <constraint firstAttribute="trailing" secondItem="AzR-zA-T0i" secondAttribute="trailing" id="ReD-yu-Yoa"/>
-                <constraint firstItem="AzR-zA-T0i" firstAttribute="leading" secondItem="59b-jh-DuI" secondAttribute="leading" id="p6Z-LD-ZDm"/>
+                <constraint firstAttribute="trailing" secondItem="AzR-zA-T0i" secondAttribute="trailing" id="HBu-vy-AE2"/>
+                <constraint firstItem="AzR-zA-T0i" firstAttribute="leading" secondItem="59b-jh-DuI" secondAttribute="leading" id="HwM-pg-bB6"/>
+                <constraint firstItem="AzR-zA-T0i" firstAttribute="top" secondItem="59b-jh-DuI" secondAttribute="top" id="O7v-70-b3L"/>
+                <constraint firstAttribute="bottom" secondItem="AzR-zA-T0i" secondAttribute="bottom" id="eCM-kc-0vA"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="homeList" destination="AzR-zA-T0i" id="Jkt-Ai-mG6"/>
             </connections>
-            <point key="canvasLocation" x="81" y="18"/>
+            <point key="canvasLocation" x="79.710144927536234" y="17.410714285714285"/>
         </view>
     </objects>
 </document>

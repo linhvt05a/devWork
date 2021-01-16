@@ -17,8 +17,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        creteStoryboard()
-        view.backgroundColor = #colorLiteral(red: 0.9764705882, green: 0.9764705882, blue: 0.9764705882, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         navigationItem.titleView = headerView
         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
@@ -30,16 +29,25 @@ class HomeViewController: UIViewController {
         startTimer()
     }
     
-    func creteStoryboard (){
-       
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let customViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        present(customViewController, animated: true, completion: nil)
+   
+    func config(){
+        view.addSubview(homeView)
+        homeView.homeList.dataSource = self
+        homeView.homeList.delegate = self
+        homeView.registerCell()
+        homeView.center = view.center
     }
     
     func startTimer() {
         let _ = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(scrollToNextCell), userInfo: nil, repeats: true);
 
+    }
+
+    @objc func showProfile(){
+        print("view profile")
+    }
+    @objc func showLogin(){
+        print("vui long login")
     }
     
     @objc func scrollToNextCell(){
@@ -52,33 +60,6 @@ class HomeViewController: UIViewController {
         scrollView.swiperView.scrollToItem(at: IndexPath(item: currenIndex, section: 0), at: .right, animated: true)
 
     }
-    
-    func config(){
-//        view.addSubview(scrollView)
-//        scrollView.swiperView.dataSource = self
-//        scrollView.swiperView.delegate = self
-//        scrollView.registerCell()
-//
-//        scrollView.center = view.center
-//        scrollView.top = view.top
-//
-//        view.addSubview(homeView)
-//        homeView.homeList.dataSource = self
-//        homeView.homeList.delegate = self
-//        homeView.registerCell()
-//        homeView.center = view.center
-//        homeView.top = scrollView.bottom
-        
-        
-    }
-    
-    @objc func showProfile(){
-        print("view profile")
-    }
-    @objc func showLogin(){
-        print("vui long login")
-    }
-   
 }
 
 extension HomeViewController : UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {

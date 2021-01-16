@@ -70,7 +70,7 @@ extension EmployerTableViewCell : UICollectionViewDelegateFlowLayout {
         return CGSize(width: W, height: W)
     }
     func caculatorWidth() -> CGFloat {
-        let sizeW = (H - 3 * cellMarginsize) / 2
+        let sizeW = (W - 4 * cellMarginsize) / 2
         return sizeW
     }
 }
