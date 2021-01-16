@@ -9,7 +9,7 @@ import UIKit
 
 class EmployerTableViewCell: UITableViewCell {
     
-    let arr = ["","","","","","","","","","","",""]
+    var arr = [String]()
     var currenIndex = 0
     
     @IBOutlet weak var employerList: UICollectionView!
@@ -27,12 +27,11 @@ class EmployerTableViewCell: UITableViewCell {
         
         employerList.register(UINib(nibName: String(describing: EmployerCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: EmployerCollectionViewCell.self))
         setupGridView()
+        startTimer()
     }
-    func setupView() {
-        let H = self.caculatorWidth()
-        employerList.heightAnchor.constraint(equalToConstant: CGFloat(arr.count)*H).isActive = true
-        contentView.heightAnchor.constraint(equalTo: employerList.heightAnchor).isActive = true
-        
+    
+    func setupView() -> CGFloat{
+        return caculatorWidth()
     }
     
     func setupGridView(){
@@ -42,10 +41,24 @@ class EmployerTableViewCell: UITableViewCell {
         flow.sectionInset = UIEdgeInsets(top: 0, left: cellMarginsize, bottom: 0, right: cellMarginsize)
     }
     
+    func startTimer() {
+        let _ = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(scrollToNextCell), userInfo: nil, repeats: true);
+
+    }
+    @objc func scrollToNextCell(){
+
+        if currenIndex < arr.count - 1 {
+            currenIndex = currenIndex + 1
+        }else {
+            currenIndex = 0
+        }
+        employerList.scrollToItem(at: IndexPath(item: currenIndex, section: 0), at: .right, animated: true)
+
+    }
 }
 
 
-extension EmployerTableViewCell : UICollectionViewDataSource {
+extension EmployerTableViewCell : UICollectionViewDataSource, UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -55,7 +68,7 @@ extension EmployerTableViewCell : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: EmployerCollectionViewCell.self), for: indexPath) as! EmployerCollectionViewCell
-        
+        cell.configImage(images: arr[indexPath.row])
         return cell
     }
     
@@ -70,7 +83,7 @@ extension EmployerTableViewCell : UICollectionViewDelegateFlowLayout {
         return CGSize(width: W, height: W)
     }
     func caculatorWidth() -> CGFloat {
-        let sizeW = (employerList.frame.size.width - 3 * cellMarginsize) / 2
+        let sizeW = (employerList.bounds.size.width - MARGIN_SIZE*4 * cellMarginsize) / 2
         return sizeW
     }
 }

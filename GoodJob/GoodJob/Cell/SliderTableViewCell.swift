@@ -10,21 +10,19 @@ import UIKit
 class SliderTableViewCell: UITableViewCell {
 
     @IBOutlet weak var bannerCollectionView: UICollectionView!
-    
+    let cellMarginsize: CGFloat = 10
     var currenIndex = 0
-    let arr = ["","",""]
+    let arr = ["","","","","","","","","","","",""]
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        contentView.backgroundColor = .red
-        self.backgroundColor = .red
-        bannerCollectionView.backgroundColor = .green
+
         bannerCollectionView.dataSource = self
         bannerCollectionView.delegate = self
         bannerCollectionView.register(UINib(nibName: String(describing: ScrollViewCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: ScrollViewCollectionViewCell.self))
         startTimer()
+        
     }
-
     func startTimer() {
         let _ = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(scrollToNextCell), userInfo: nil, repeats: true);
 
@@ -39,6 +37,10 @@ class SliderTableViewCell: UITableViewCell {
         bannerCollectionView.scrollToItem(at: IndexPath(item: currenIndex, section: 0), at: .right, animated: true)
 
     }
+    func configCell () -> CGFloat{
+        return bannerCollectionView.frame.size.height
+    }
+   
 }
 
 extension SliderTableViewCell : UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
@@ -48,7 +50,6 @@ extension SliderTableViewCell : UICollectionViewDataSource , UICollectionViewDel
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: ScrollViewCollectionViewCell.self), for: indexPath) as! ScrollViewCollectionViewCell
-        cell.backgroundColor = .red
         return cell
     }
     

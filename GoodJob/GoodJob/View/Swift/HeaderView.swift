@@ -25,7 +25,7 @@ class HeaderView: UIView {
         leftBtn.layer.borderColor = UIColor.red.cgColor
         leftBtn.layer.cornerRadius = leftBtn.height/2
         leftBtn.clipsToBounds = true
-        
+        leftBtn.isHidden = true
     }
     
     override var intrinsicContentSize: CGSize {

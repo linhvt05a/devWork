@@ -9,8 +9,6 @@ import UIKit
 
 class ScrollViewCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var bannerView: UIImageView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -11,9 +11,8 @@ class HomeViewController: UIViewController {
     
     let headerView = HeaderView.loadViewFromXib()
     let homeView = HomeListView.loadViewFromXib()
-    let rowHeight = 0 as CGFloat
-    
-    let arr = ["","","","","","","","","","","","","","","","","","","",""]
+    var rowHeight = 0 as CGFloat
+    var arr = ["06577d261edb9ec","","","","","","","","","","","","","","","","","","",""]
     var currenIndex = 0
     
     override func viewDidLoad() {
@@ -29,18 +28,14 @@ class HomeViewController: UIViewController {
         config()
     }
     func config(){
-        
         view.addSubview(homeView)
         homeView.center = view.center
         homeView.top = view.top
         homeView.height = view.height
-    
+        
         homeView.registerCell()
         homeView.homeList.dataSource = self
         homeView.homeList.delegate = self
-        
-        
-        
     }
     
     @objc func showProfile(){
@@ -67,6 +62,7 @@ extension HomeViewController :UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SliderTableViewCell.self), for: indexPath) as! SliderTableViewCell
+            rowHeight = cell.configCell()
             return cell
         }
         
@@ -78,8 +74,8 @@ extension HomeViewController :UITableViewDataSource {
         }
         
         if indexPath.section == 2 {
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobHotListTableViewCell.self), for: indexPath) as! JobHotListTableViewCell
-        return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobHotListTableViewCell.self), for: indexPath) as! JobHotListTableViewCell
+            return cell
         }
         
         if indexPath.section == 3{
@@ -114,13 +110,18 @@ extension HomeViewController :UITableViewDataSource {
         
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: EmployerTableViewCell.self), for: indexPath) as! EmployerTableViewCell
-            cell.setupView()
+            cell.arr = arr
+            rowHeight = cell.setupView()
             return cell
         }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        if indexPath.section == 9 || indexPath.section == 0{
+            return rowHeight
+        }else{
+            return UITableView.automaticDimension
+        }
     }
     
 }
@@ -134,7 +135,7 @@ extension HomeViewController : UITableViewDelegate{
             return sectionView
         }
         if section == 3 {
-          
+            
             sectionView.setupView(letfIcon: "icons8-heart-40", title: "VIỆC LÀM HẤP DẪN", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40", index: 3)
             return sectionView
         }
@@ -150,7 +151,7 @@ extension HomeViewController : UITableViewDelegate{
         }
         
         if section == 6{
-
+            
             sectionView.setupView(letfIcon: "icons8-it-40", title: "VIÊC LÀM IT", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40", index: 6)
             return sectionView
         }

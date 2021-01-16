@@ -15,24 +15,22 @@
                 <rect key="frame" x="0.0" y="0.0" width="253" height="149"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="06577d261edb9ec" translatesAutoresizingMaskIntoConstraints="NO" id="VrY-8W-RcQ">
-                        <rect key="frame" x="6.5" y="10.5" width="240" height="128"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="240" id="3it-Ld-CWh"/>
-                            <constraint firstAttribute="height" constant="128" id="ffA-rT-qgl"/>
-                        </constraints>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VrY-8W-RcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="253" height="149"/>
                     </imageView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="VrY-8W-RcQ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="uij-Bj-3F4"/>
-                <constraint firstItem="VrY-8W-RcQ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="vc8-qR-abf"/>
+                <constraint firstItem="VrY-8W-RcQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="W9W-3G-Wch"/>
+                <constraint firstAttribute="trailing" secondItem="VrY-8W-RcQ" secondAttribute="trailing" id="kRg-2U-QwC"/>
+                <constraint firstItem="VrY-8W-RcQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mUS-3D-Ypq"/>
+                <constraint firstAttribute="bottom" secondItem="VrY-8W-RcQ" secondAttribute="bottom" id="qmw-C7-doK"/>
             </constraints>
             <size key="customSize" width="253" height="149"/>
+            <connections>
+                <outlet property="companyLogo" destination="VrY-8W-RcQ" id="Orn-jb-V7a"/>
+            </connections>
             <point key="canvasLocation" x="31" y="-22"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="06577d261edb9ec" width="360" height="360"/>
-    </resources>
 </document>
