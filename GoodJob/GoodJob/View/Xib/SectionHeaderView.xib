@@ -33,41 +33,29 @@
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uc4-Z8-TL5">
                             <rect key="frame" x="299" y="4.5" width="94" height="28"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xem thêm  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neW-E5-nfk">
-                                    <rect key="frame" x="13" y="6.5" width="64" height="15"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="64" id="P49-Bs-MTl"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                    <color key="textColor" red="0.96826684407086538" green="0.95402454245657786" blue="0.98171344245831993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-double-right-40" translatesAutoresizingMaskIntoConstraints="NO" id="NGY-AE-WHT">
-                                    <rect key="frame" x="82" y="8.5" width="10" height="11"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="10" id="Zkp-ce-p0N"/>
-                                        <constraint firstAttribute="height" constant="11" id="r6X-7u-zNY"/>
-                                    </constraints>
-                                </imageView>
-                            </subviews>
                             <color key="backgroundColor" red="0.1124466049" green="0.47211739450000001" blue="0.03169363058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="94" id="30i-ef-zpG"/>
-                                <constraint firstItem="NGY-AE-WHT" firstAttribute="centerY" secondItem="Uc4-Z8-TL5" secondAttribute="centerY" id="MQl-pR-0uS"/>
                                 <constraint firstAttribute="height" constant="28" id="Ukr-0W-7ld"/>
-                                <constraint firstItem="neW-E5-nfk" firstAttribute="centerY" secondItem="Uc4-Z8-TL5" secondAttribute="centerY" id="VPQ-eD-IzB"/>
-                                <constraint firstAttribute="trailing" secondItem="NGY-AE-WHT" secondAttribute="trailing" constant="2" id="Zmn-nU-qiT"/>
-                                <constraint firstItem="NGY-AE-WHT" firstAttribute="leading" secondItem="neW-E5-nfk" secondAttribute="trailing" constant="5" id="h9N-Vv-6JZ"/>
                             </constraints>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7f-L8-sDS">
+                            <rect key="frame" x="327" y="5" width="69" height="27"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Xem thêm ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.11244660491332736" green="0.47211739451614854" blue="0.031693630584967568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="HRB-Ea-MwS" firstAttribute="leading" secondItem="P0I-iw-4k4" secondAttribute="trailing" constant="10" id="4zl-Jn-NrM"/>
                         <constraint firstAttribute="bottom" secondItem="HRB-Ea-MwS" secondAttribute="bottom" constant="8" id="6En-6a-4gA"/>
+                        <constraint firstItem="d7f-L8-sDS" firstAttribute="leading" secondItem="HRB-Ea-MwS" secondAttribute="trailing" constant="38" id="9z5-UL-84R"/>
                         <constraint firstAttribute="trailing" secondItem="Uc4-Z8-TL5" secondAttribute="trailing" constant="8" id="AAd-1m-5GE"/>
                         <constraint firstItem="P0I-iw-4k4" firstAttribute="centerY" secondItem="E86-NM-P3S" secondAttribute="centerY" id="Thi-WL-etE"/>
+                        <constraint firstItem="d7f-L8-sDS" firstAttribute="centerY" secondItem="HRB-Ea-MwS" secondAttribute="centerY" id="UDT-1A-FZ1"/>
+                        <constraint firstAttribute="trailing" secondItem="d7f-L8-sDS" secondAttribute="trailing" constant="5" id="ejd-SE-Qzf"/>
                         <constraint firstItem="P0I-iw-4k4" firstAttribute="leading" secondItem="E86-NM-P3S" secondAttribute="leading" constant="8" id="fIU-TL-7D3"/>
                         <constraint firstItem="Uc4-Z8-TL5" firstAttribute="centerY" secondItem="HRB-Ea-MwS" secondAttribute="centerY" id="gde-s6-5qm"/>
                         <constraint firstItem="HRB-Ea-MwS" firstAttribute="centerY" secondItem="P0I-iw-4k4" secondAttribute="centerY" id="weA-dD-fn5"/>
@@ -83,9 +71,8 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="sectionDetail" destination="neW-E5-nfk" id="obx-os-cpk"/>
+                <outlet property="btnViewMore" destination="d7f-L8-sDS" id="wRK-BH-Ljm"/>
                 <outlet property="sectionIcon" destination="P0I-iw-4k4" id="AXr-Hx-uh8"/>
-                <outlet property="sectionRowIcon" destination="NGY-AE-WHT" id="qLC-Wo-Wcc"/>
                 <outlet property="sectionTitle" destination="HRB-Ea-MwS" id="F8n-gs-Qsw"/>
                 <outlet property="sectionView" destination="E86-NM-P3S" id="aCi-ij-hMs"/>
                 <outlet property="viewMore" destination="Uc4-Z8-TL5" id="UAD-16-ovm"/>
@@ -94,7 +81,6 @@
         </view>
     </objects>
     <resources>
-        <image name="icons8-double-right-40" width="40" height="40"/>
         <image name="icons8-start-40" width="40" height="40"/>
     </resources>
 </document>

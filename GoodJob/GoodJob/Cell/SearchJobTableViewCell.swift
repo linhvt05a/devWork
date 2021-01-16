@@ -15,6 +15,9 @@ protocol SearchJobTitleDelegate: class {
     func gotoJobtitleVC()
 }
 
+protocol SearchAllJobDelegate: class {
+    func gotoViewAllResult()
+}
 class SearchJobTableViewCell: UITableViewCell {
 
     @IBOutlet weak var containerView: UIView!
@@ -30,6 +33,7 @@ class SearchJobTableViewCell: UITableViewCell {
     
     weak var locationDelegate: SearchLocationDelegate?
     weak var jobtitleDelegate: SearchJobTitleDelegate?
+    weak var viewAllJobDelegate: SearchAllJobDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,6 +41,8 @@ class SearchJobTableViewCell: UITableViewCell {
         self.selectionStyle = .none
         setupView()
         tapToVC()
+        
+        searchJob.delegate = self
     }
 
    
@@ -79,7 +85,13 @@ class SearchJobTableViewCell: UITableViewCell {
     }
     
     @objc func gotoSearchVC(){
-        print("dfsdfsdfsdfsd")
+        viewAllJobDelegate?.gotoViewAllResult()
     }
     
+}
+
+extension SearchJobTableViewCell : UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+    }
 }

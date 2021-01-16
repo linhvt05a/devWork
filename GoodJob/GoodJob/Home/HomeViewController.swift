@@ -70,6 +70,7 @@ extension HomeViewController :UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SearchJobTableViewCell.self), for: indexPath) as! SearchJobTableViewCell
             cell.locationDelegate = self
             cell.jobtitleDelegate = self
+            cell.viewAllJobDelegate = self
             return cell
         }
         
@@ -184,14 +185,28 @@ extension HomeViewController : UITableViewDelegate{
     }
 }
 
-extension HomeViewController : SearchLocationDelegate, SearchJobTitleDelegate {
+extension HomeViewController : SearchLocationDelegate, SearchJobTitleDelegate, SearchAllJobDelegate {
+
     func gotolocationVC() {
-        print("location show vc")
+       let vc = JobLocationViewController()
+        vc.modalPresentationStyle = .formSheet
+        vc.view.backgroundColor = .white
+        present(vc, animated: true, completion: nil)
     }
     
     func gotoJobtitleVC() {
-        print("job name show vc")
-    }  
+        let vc = JobTitleViewController()
+         vc.modalPresentationStyle = .fullScreen
+         vc.view.backgroundColor = .white
+         present(vc, animated: true, completion: nil)
+    }
+    
+    func gotoViewAllResult() {
+        let vc = JobResultViewController()
+         vc.modalPresentationStyle = .fullScreen
+         vc.view.backgroundColor = .white
+         present(vc, animated: true, completion: nil)
+    }
 }
 
 
