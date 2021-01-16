@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        creteStoryboard()
         view.backgroundColor = #colorLiteral(red: 0.9764705882, green: 0.9764705882, blue: 0.9764705882, alpha: 1)
         navigationItem.titleView = headerView
         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
@@ -28,6 +28,13 @@ class HomeViewController: UIViewController {
         headerView.rightBtn.addTarget(self, action: #selector(showLogin), for: .touchUpInside)
         config()
         startTimer()
+    }
+    
+    func creteStoryboard (){
+       
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let customViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        present(customViewController, animated: true, completion: nil)
     }
     
     func startTimer() {
@@ -47,20 +54,22 @@ class HomeViewController: UIViewController {
     }
     
     func config(){
-        view.addSubview(scrollView)
-        scrollView.swiperView.dataSource = self
-        scrollView.swiperView.delegate = self
-        scrollView.registerCell()
-
-        view.addSubview(homeView)
-        homeView.homeList.dataSource = self
-        homeView.homeList.delegate = self
-        homeView.registerCell()
-        homeView.width = view.width
-        homeView.left = view.left
-        homeView.right = view.right
-        homeView.top = scrollView.bottom
-       
+//        view.addSubview(scrollView)
+//        scrollView.swiperView.dataSource = self
+//        scrollView.swiperView.delegate = self
+//        scrollView.registerCell()
+//
+//        scrollView.center = view.center
+//        scrollView.top = view.top
+//
+//        view.addSubview(homeView)
+//        homeView.homeList.dataSource = self
+//        homeView.homeList.delegate = self
+//        homeView.registerCell()
+//        homeView.center = view.center
+//        homeView.top = scrollView.bottom
+        
+        
     }
     
     @objc func showProfile(){
