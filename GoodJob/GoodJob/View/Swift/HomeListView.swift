@@ -18,9 +18,13 @@ class HomeListView: UIView {
     func registerCell() {
         homeList.separatorStyle = .none
         homeList.showsVerticalScrollIndicator = false
-       
+        
+        homeList.register(UINib(nibName: String(describing: SliderTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: SliderTableViewCell.self))
+        
         homeList.register(UINib(nibName: String(describing: SearchJobTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: SearchJobTableViewCell.self))
+        
         homeList.register(UINib(nibName: String(describing: JobHotListTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: JobHotListTableViewCell.self))
+        
         homeList.register(UINib(nibName: String(describing: JobFavoriteTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: JobFavoriteTableViewCell.self))
         
         homeList.register(UINib(nibName: String(describing: JobHightSalaryTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: JobHightSalaryTableViewCell.self))
