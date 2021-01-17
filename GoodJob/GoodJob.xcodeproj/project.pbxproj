@@ -29,6 +29,13 @@
 		5BB055C025B2B01F003EBC81 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB055BE25B2B01F003EBC81 /* SliderTableViewCell.swift */; };
 		5BB055C125B2B01F003EBC81 /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BB055BF25B2B01F003EBC81 /* SliderTableViewCell.xib */; };
 		5BD44DD525B494E600408853 /* ScrollViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD44DD425B494E600408853 /* ScrollViewCollectionViewCell.swift */; };
+		5BD44DDB25B4A19900408853 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD44DDA25B4A19900408853 /* TabbarViewController.swift */; };
+		5BD44DE825B4A91C00408853 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD44DE625B4A91C00408853 /* ProfileViewController.swift */; };
+		5BD44DE925B4A91C00408853 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD44DE725B4A91C00408853 /* ProfileViewController.xib */; };
+		5BD44DF025B4AB5E00408853 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD44DEE25B4AB5E00408853 /* HistoryViewController.swift */; };
+		5BD44DF125B4AB5E00408853 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD44DEF25B4AB5E00408853 /* HistoryViewController.xib */; };
+		5BD44DFB25B4AD7100408853 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD44DF925B4AD7100408853 /* SettingViewController.swift */; };
+		5BD44DFC25B4AD7100408853 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD44DFA25B4AD7100408853 /* SettingViewController.xib */; };
 		5BD66F5E25AFEFE8009D2CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66F5D25AFEFE8009D2CDC /* AppDelegate.swift */; };
 		5BD66F6025AFEFE9009D2CDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66F5F25AFEFE9009D2CDC /* SceneDelegate.swift */; };
 		5BD66F6725AFEFF3009D2CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD66F6625AFEFF3009D2CDC /* Assets.xcassets */; };
@@ -116,6 +123,13 @@
 		5BB055BE25B2B01F003EBC81 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
 		5BB055BF25B2B01F003EBC81 /* SliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderTableViewCell.xib; sourceTree = "<group>"; };
 		5BD44DD425B494E600408853 /* ScrollViewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		5BD44DDA25B4A19900408853 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		5BD44DE625B4A91C00408853 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5BD44DE725B4A91C00408853 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		5BD44DEE25B4AB5E00408853 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		5BD44DEF25B4AB5E00408853 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		5BD44DF925B4AD7100408853 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		5BD44DFA25B4AD7100408853 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		5BD66F5A25AFEFE8009D2CDC /* GoodJob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodJob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD66F5D25AFEFE8009D2CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BD66F5F25AFEFE9009D2CDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -279,6 +293,41 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		5BD44DD925B4A16900408853 /* Tabar */ = {
+			isa = PBXGroup;
+			children = (
+				5BD44DDA25B4A19900408853 /* TabbarViewController.swift */,
+			);
+			path = Tabar;
+			sourceTree = "<group>";
+		};
+		5BD44DE225B4A53100408853 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5BD44DE625B4A91C00408853 /* ProfileViewController.swift */,
+				5BD44DE725B4A91C00408853 /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5BD44DED25B4AB3900408853 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				5BD44DEE25B4AB5E00408853 /* HistoryViewController.swift */,
+				5BD44DEF25B4AB5E00408853 /* HistoryViewController.xib */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		5BD44DF825B4AD5800408853 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				5BD44DF925B4AD7100408853 /* SettingViewController.swift */,
+				5BD44DFA25B4AD7100408853 /* SettingViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		5BD66F5125AFEFE8009D2CDC = {
 			isa = PBXGroup;
 			children = (
@@ -302,9 +351,13 @@
 		5BD66F5C25AFEFE8009D2CDC /* GoodJob */ = {
 			isa = PBXGroup;
 			children = (
+				5BD44DF825B4AD5800408853 /* Setting */,
+				5BD44DD925B4A16900408853 /* Tabar */,
 				5BDAEDD325B43AF400F4108B /* Model */,
 				5BDAED8025B3959100F4108B /* JobGroup */,
 				5BD66F9F25AFF3F2009D2CDC /* Home */,
+				5BD44DE225B4A53100408853 /* Profile */,
+				5BD44DED25B4AB3900408853 /* History */,
 				5B2F7C4D25B391050066F2B8 /* Account */,
 				5B2F7C4E25B3911C0066F2B8 /* JobView */,
 				5BD66FA525AFF515009D2CDC /* View */,
@@ -537,8 +590,10 @@
 				5BE6CA8F25B16072008CC282 /* JobITTableViewCell.xib in Resources */,
 				5B856DC925B2A0F900AF24FD /* HomeStoryBoard.storyboard in Resources */,
 				5B62AACB25B07499006CA057 /* HomeListView.xib in Resources */,
+				5BD44DE925B4A91C00408853 /* ProfileViewController.xib in Resources */,
 				5BB055C125B2B01F003EBC81 /* SliderTableViewCell.xib in Resources */,
 				5B1BBAC425B1AD7C000BFA55 /* EmployerCollectionViewCell.xib in Resources */,
+				5BD44DFC25B4AD7100408853 /* SettingViewController.xib in Resources */,
 				5BE6CA8525B16054008CC282 /* JobManagerTableViewCell.xib in Resources */,
 				5BE6CAAD25B16892008CC282 /* ItemJobView.xib in Resources */,
 				5BE6CA6425B14B03008CC282 /* JobFavoriteTableViewCell.xib in Resources */,
@@ -546,6 +601,7 @@
 				5BDAEDF025B4708700F4108B /* ListMoreViewController.xib in Resources */,
 				5BE6CA7125B14D33008CC282 /* SectionHeaderView.xib in Resources */,
 				5BE6CA9D25B160BB008CC282 /* JobInternTableViewCell.xib in Resources */,
+				5BD44DF125B4AB5E00408853 /* HistoryViewController.xib in Resources */,
 				5BDAEDAE25B3FEC600F4108B /* LocationViewController.xib in Resources */,
 				5BD66F6A25AFEFF3009D2CDC /* LaunchScreen.storyboard in Resources */,
 				5B1BBAB425B1A6AF000BFA55 /* EmployerTableViewCell.xib in Resources */,
@@ -649,6 +705,7 @@
 			files = (
 				5B2F7C4425B390D90066F2B8 /* LoginViewController.swift in Sources */,
 				5B2F7C3A25B38CB70066F2B8 /* JobTitleViewController.swift in Sources */,
+				5BD44DDB25B4A19900408853 /* TabbarViewController.swift in Sources */,
 				5BD66FBD25B00990009D2CDC /* Extension-uiview.swift in Sources */,
 				5BDAEDDA25B43B8700F4108B /* MajorModel.swift in Sources */,
 				5BE6CA8425B16054008CC282 /* JobManagerTableViewCell.swift in Sources */,
@@ -674,11 +731,14 @@
 				5B1BBAC325B1AD7C000BFA55 /* EmployerCollectionViewCell.swift in Sources */,
 				5BD66F6025AFEFE9009D2CDC /* SceneDelegate.swift in Sources */,
 				5BDAEDCB25B4082200F4108B /* JobTitleTableViewCell.swift in Sources */,
+				5BD44DE825B4A91C00408853 /* ProfileViewController.swift in Sources */,
 				5BD66FA125AFF421009D2CDC /* HomeViewController.swift in Sources */,
+				5BD44DF025B4AB5E00408853 /* HistoryViewController.swift in Sources */,
 				5BE6CA6C25B14D25008CC282 /* SectionHeaderView.swift in Sources */,
 				5BE6CA6325B14B03008CC282 /* JobFavoriteTableViewCell.swift in Sources */,
 				5B2F7C4925B390EE0066F2B8 /* SignupViewController.swift in Sources */,
 				5B2F7C3F25B38E4D0066F2B8 /* JobResultViewController.swift in Sources */,
+				5BD44DFB25B4AD7100408853 /* SettingViewController.swift in Sources */,
 				5BD66FB325B004D4009D2CDC /* HeaderView.swift in Sources */,
 				5BE6CA9525B1609A008CC282 /* JobPartTimeTableViewCell.swift in Sources */,
 				5BD66FC225B00B4D009D2CDC /* Constant.swift in Sources */,

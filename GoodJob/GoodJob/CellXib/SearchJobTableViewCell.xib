@@ -43,7 +43,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Awt-9b-BDH">
                                 <rect key="frame" x="10" y="86" width="446" height="42"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="ojK-v1-5mI">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-user-location-40" translatesAutoresizingMaskIntoConstraints="NO" id="ojK-v1-5mI">
                                         <rect key="frame" x="8" y="8" width="26" height="26"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -61,22 +61,22 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drop-fill" translatesAutoresizingMaskIntoConstraints="NO" id="KKM-UU-N4q">
-                                        <rect key="frame" x="396" y="11.5" width="40" height="19"/>
+                                        <rect key="frame" x="417" y="12" width="19" height="18"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="19" id="fMa-k5-cg7"/>
-                                            <constraint firstAttribute="width" constant="40" id="xGk-kQ-ZQh"/>
+                                            <constraint firstAttribute="height" constant="18" id="Au5-XN-huh"/>
+                                            <constraint firstAttribute="width" constant="19" id="fax-Pd-o0j"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="ojK-v1-5mI" firstAttribute="leading" secondItem="Awt-9b-BDH" secondAttribute="leading" constant="8" id="Ibf-hw-uIh"/>
-                                    <constraint firstAttribute="trailing" secondItem="KKM-UU-N4q" secondAttribute="trailing" constant="10" id="W7E-9k-J3S"/>
                                     <constraint firstAttribute="height" constant="42" id="YRm-EE-sq8"/>
                                     <constraint firstItem="B12-yx-YAn" firstAttribute="centerY" secondItem="ojK-v1-5mI" secondAttribute="centerY" id="YsS-ix-XbO"/>
                                     <constraint firstItem="B12-yx-YAn" firstAttribute="leading" secondItem="ojK-v1-5mI" secondAttribute="trailing" constant="8" id="Yyk-jU-vUX"/>
-                                    <constraint firstItem="KKM-UU-N4q" firstAttribute="centerY" secondItem="B12-yx-YAn" secondAttribute="centerY" id="cw0-Gb-lwG"/>
+                                    <constraint firstItem="KKM-UU-N4q" firstAttribute="centerY" secondItem="B12-yx-YAn" secondAttribute="centerY" id="as8-zI-kcC"/>
                                     <constraint firstItem="ojK-v1-5mI" firstAttribute="centerY" secondItem="Awt-9b-BDH" secondAttribute="centerY" id="tgo-ZA-lax"/>
+                                    <constraint firstAttribute="trailing" secondItem="KKM-UU-N4q" secondAttribute="trailing" constant="10" id="yvj-eZ-hW7"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="NO"/>
@@ -100,11 +100,11 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drop-fill" translatesAutoresizingMaskIntoConstraints="NO" id="GBz-qx-DeL">
                                         <rect key="frame" x="417" y="12" width="19" height="18"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="18" id="7Ha-EL-vJY"/>
-                                            <constraint firstAttribute="width" constant="19" id="erS-vk-lu0"/>
+                                            <constraint firstAttribute="height" constant="18" id="RK3-Sc-xt6"/>
+                                            <constraint firstAttribute="width" constant="19" id="zUE-4O-3f8"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="job" translatesAutoresizingMaskIntoConstraints="NO" id="6Ny-PB-snl">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-search-client-40" translatesAutoresizingMaskIntoConstraints="NO" id="6Ny-PB-snl">
                                         <rect key="frame" x="8" y="5" width="22" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="22" id="8Vm-4e-hor"/>
@@ -117,10 +117,10 @@
                                     <constraint firstAttribute="height" constant="42" id="3w7-Jh-eVv"/>
                                     <constraint firstItem="zZt-fh-73h" firstAttribute="leading" secondItem="6Ny-PB-snl" secondAttribute="trailing" constant="8" id="CGq-jl-7qu"/>
                                     <constraint firstItem="zZt-fh-73h" firstAttribute="centerY" secondItem="6Ny-PB-snl" secondAttribute="centerY" id="Lw4-dZ-ATK"/>
+                                    <constraint firstItem="GBz-qx-DeL" firstAttribute="centerY" secondItem="zZt-fh-73h" secondAttribute="centerY" id="PJd-Hl-Ld6"/>
                                     <constraint firstItem="6Ny-PB-snl" firstAttribute="centerY" secondItem="Dg7-8l-xGd" secondAttribute="centerY" id="ax9-e2-egy"/>
                                     <constraint firstItem="6Ny-PB-snl" firstAttribute="leading" secondItem="Dg7-8l-xGd" secondAttribute="leading" constant="8" id="fkN-0Q-aZh"/>
-                                    <constraint firstAttribute="trailing" secondItem="GBz-qx-DeL" secondAttribute="trailing" constant="10" id="may-xD-o7j"/>
-                                    <constraint firstItem="GBz-qx-DeL" firstAttribute="centerY" secondItem="zZt-fh-73h" secondAttribute="centerY" id="sGs-R3-NM4"/>
+                                    <constraint firstAttribute="trailing" secondItem="GBz-qx-DeL" secondAttribute="trailing" constant="10" id="v0h-El-hPZ"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="NO"/>
@@ -140,7 +140,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TÌM VIỆC NGAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spk-i1-uys">
-                                        <rect key="frame" x="69" y="12.5" width="125" height="21"/>
+                                        <rect key="frame" x="57" y="12.5" width="125" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -150,7 +150,7 @@
                                 <constraints>
                                     <constraint firstItem="MBb-zL-LmQ" firstAttribute="leading" secondItem="w2S-Mh-rwa" secondAttribute="leading" constant="20" id="fbq-vQ-JJi"/>
                                     <constraint firstItem="spk-i1-uys" firstAttribute="centerY" secondItem="MBb-zL-LmQ" secondAttribute="centerY" id="kvL-3e-dIZ"/>
-                                    <constraint firstItem="spk-i1-uys" firstAttribute="leading" secondItem="MBb-zL-LmQ" secondAttribute="trailing" constant="22" id="nB8-16-gq2"/>
+                                    <constraint firstItem="spk-i1-uys" firstAttribute="leading" secondItem="MBb-zL-LmQ" secondAttribute="trailing" constant="10" id="nB8-16-gq2"/>
                                     <constraint firstAttribute="height" constant="46" id="ods-hT-hGT"/>
                                     <constraint firstAttribute="width" constant="240" id="rjJ-GV-WKj"/>
                                     <constraint firstItem="MBb-zL-LmQ" firstAttribute="centerY" secondItem="w2S-Mh-rwa" secondAttribute="centerY" id="z18-lb-o2J"/>
@@ -214,8 +214,8 @@
     <resources>
         <image name="drop-fill" width="40" height="40"/>
         <image name="icons8-search-40" width="40" height="40"/>
-        <image name="job" width="40" height="40"/>
-        <image name="location" width="40" height="40"/>
+        <image name="icons8-search-client-40" width="40" height="40"/>
+        <image name="icons8-user-location-40" width="40" height="40"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

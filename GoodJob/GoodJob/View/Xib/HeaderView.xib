@@ -45,18 +45,17 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sa-59-c1N">
                     <rect key="frame" x="387" y="32" width="49" height="30"/>
-                    <color key="backgroundColor" red="0.098035019083826114" green="0.46265033839904157" blue="0.071388346753911189" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="SJy-Ly-9Se"/>
                         <constraint firstAttribute="width" constant="49" id="j0W-QG-7u3"/>
                     </constraints>
-                    <state key="normal" title="Login">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" red="0.29411764709999999" green="0.70196078429999997" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="NO"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="5"/>
+                            <real key="value" value="0.0"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </button>
