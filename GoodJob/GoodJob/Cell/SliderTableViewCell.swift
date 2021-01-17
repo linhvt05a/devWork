@@ -38,7 +38,7 @@ class SliderTableViewCell: UITableViewCell {
 
     }
     func configCell () -> CGFloat{
-        return bannerCollectionView.frame.size.height
+        return bannerCollectionView.height
     }
    
 }

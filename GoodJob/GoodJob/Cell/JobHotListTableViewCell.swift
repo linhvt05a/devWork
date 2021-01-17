@@ -9,12 +9,12 @@ import UIKit
 
 class JobHotListTableViewCell: UITableViewCell {
 
-    let view = ItemJobView.loadViewFromXib()
+    let listView = ItemJobView.loadViewFromXib()
     override func awakeFromNib() {
         super.awakeFromNib()
-        contentView.addSubview(view)
-        contentView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
-        view.setupView()
+        contentView.addSubview(listView)
     }
-    
+    func setupView() -> CGFloat{
+        return listView.height
+    }
 }

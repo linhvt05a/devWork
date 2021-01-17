@@ -24,11 +24,11 @@
 		5B856DC925B2A0F900AF24FD /* HomeStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B856DC825B2A0F900AF24FD /* HomeStoryBoard.storyboard */; };
 		5BA6C23B25B1EE4000658BFA /* ScrollableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA6C23A25B1EE4000658BFA /* ScrollableView.swift */; };
 		5BA6C24025B1EEA100658BFA /* ScrollableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA6C23F25B1EEA000658BFA /* ScrollableView.xib */; };
-		5BA6C24925B1F0F500658BFA /* ScrollViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA6C24725B1F0F500658BFA /* ScrollViewCollectionViewCell.swift */; };
 		5BA6C24A25B1F0F500658BFA /* ScrollViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA6C24825B1F0F500658BFA /* ScrollViewCollectionViewCell.xib */; };
 		5BB055AF25B2A9F7003EBC81 /* GoodJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB055AE25B2A9F7003EBC81 /* GoodJob.swift */; };
 		5BB055C025B2B01F003EBC81 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB055BE25B2B01F003EBC81 /* SliderTableViewCell.swift */; };
 		5BB055C125B2B01F003EBC81 /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BB055BF25B2B01F003EBC81 /* SliderTableViewCell.xib */; };
+		5BD44DD525B494E600408853 /* ScrollViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD44DD425B494E600408853 /* ScrollViewCollectionViewCell.swift */; };
 		5BD66F5E25AFEFE8009D2CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66F5D25AFEFE8009D2CDC /* AppDelegate.swift */; };
 		5BD66F6025AFEFE9009D2CDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66F5F25AFEFE9009D2CDC /* SceneDelegate.swift */; };
 		5BD66F6725AFEFF3009D2CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD66F6625AFEFF3009D2CDC /* Assets.xcassets */; };
@@ -111,11 +111,11 @@
 		5B856DC825B2A0F900AF24FD /* HomeStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryBoard.storyboard; sourceTree = "<group>"; };
 		5BA6C23A25B1EE4000658BFA /* ScrollableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableView.swift; sourceTree = "<group>"; };
 		5BA6C23F25B1EEA000658BFA /* ScrollableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollableView.xib; sourceTree = "<group>"; };
-		5BA6C24725B1F0F500658BFA /* ScrollViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewCollectionViewCell.swift; sourceTree = "<group>"; };
 		5BA6C24825B1F0F500658BFA /* ScrollViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewCollectionViewCell.xib; sourceTree = "<group>"; };
 		5BB055AE25B2A9F7003EBC81 /* GoodJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJob.swift; sourceTree = "<group>"; };
 		5BB055BE25B2B01F003EBC81 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
 		5BB055BF25B2B01F003EBC81 /* SliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderTableViewCell.xib; sourceTree = "<group>"; };
+		5BD44DD425B494E600408853 /* ScrollViewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewCollectionViewCell.swift; sourceTree = "<group>"; };
 		5BD66F5A25AFEFE8009D2CDC /* GoodJob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodJob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD66F5D25AFEFE8009D2CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BD66F5F25AFEFE9009D2CDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -271,7 +271,7 @@
 				5BE6CA9A25B160BB008CC282 /* JobInternTableViewCell.swift */,
 				5B1BBAB125B1A6AE000BFA55 /* EmployerTableViewCell.swift */,
 				5B1BBAC125B1AD7C000BFA55 /* EmployerCollectionViewCell.swift */,
-				5BA6C24725B1F0F500658BFA /* ScrollViewCollectionViewCell.swift */,
+				5BD44DD425B494E600408853 /* ScrollViewCollectionViewCell.swift */,
 				5BB055BE25B2B01F003EBC81 /* SliderTableViewCell.swift */,
 				5BDAEDB525B4020B00F4108B /* LocationTableViewCell.swift */,
 				5BDAEDC925B4082200F4108B /* JobTitleTableViewCell.swift */,
@@ -665,13 +665,13 @@
 				5B15BCBB25B0835A00933BBE /* SearchJobTableViewCell.swift in Sources */,
 				5BB055C025B2B01F003EBC81 /* SliderTableViewCell.swift in Sources */,
 				5BE6CA7A25B15E42008CC282 /* JobHightSalaryTableViewCell.swift in Sources */,
+				5BD44DD525B494E600408853 /* ScrollViewCollectionViewCell.swift in Sources */,
 				5BDAEDD525B43B2600F4108B /* LocationModel.swift in Sources */,
 				5BDAEDE925B4668000F4108B /* SearchModel.swift in Sources */,
 				5BE6CAA825B1687F008CC282 /* ItemJobView.swift in Sources */,
 				5BE6CA5925B14963008CC282 /* JobHotListTableViewCell.swift in Sources */,
 				5BD66F5E25AFEFE8009D2CDC /* AppDelegate.swift in Sources */,
 				5B1BBAC325B1AD7C000BFA55 /* EmployerCollectionViewCell.swift in Sources */,
-				5BA6C24925B1F0F500658BFA /* ScrollViewCollectionViewCell.swift in Sources */,
 				5BD66F6025AFEFE9009D2CDC /* SceneDelegate.swift in Sources */,
 				5BDAEDCB25B4082200F4108B /* JobTitleTableViewCell.swift in Sources */,
 				5BD66FA125AFF421009D2CDC /* HomeViewController.swift in Sources */,

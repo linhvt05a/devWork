@@ -89,6 +89,7 @@ extension HomeViewController :UITableViewDataSource {
             for k in location {
                 cell.locationName.text = k.locName
             }
+          
             cell.locationDelegate = self
             cell.jobtitleDelegate = self
             cell.viewAllJobDelegate = self
@@ -99,36 +100,43 @@ extension HomeViewController :UITableViewDataSource {
         
         if indexPath.section == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobHotListTableViewCell.self), for: indexPath) as! JobHotListTableViewCell
+            rowHeight = cell.setupView()
             return cell
         }
         
         if indexPath.section == 3{
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobFavoriteTableViewCell.self), for: indexPath) as! JobFavoriteTableViewCell
+            rowHeight = cell.setupView()
             return cell
         }
         
         if indexPath.section == 4 {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobHightSalaryTableViewCell.self), for: indexPath) as! JobHightSalaryTableViewCell
+            rowHeight = cell.setupView()
             return cell
         }
         
         if indexPath.section == 5 {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobManagerTableViewCell.self), for: indexPath) as! JobManagerTableViewCell
+            rowHeight = cell.setupView()
             return cell
         }
         
         if indexPath.section == 6 {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobITTableViewCell.self), for: indexPath) as! JobITTableViewCell
+            rowHeight = cell.setupView()
             return cell
         }
         
         if indexPath.section == 7 {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobPartTimeTableViewCell.self), for: indexPath) as! JobPartTimeTableViewCell
+            rowHeight = cell.setupView()
             return cell
         }
         
         if indexPath.section == 8 {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: JobInternTableViewCell.self), for: indexPath) as! JobInternTableViewCell
+            rowHeight = cell.setupView()
             return cell
         }
         
@@ -141,10 +149,10 @@ extension HomeViewController :UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 9 || indexPath.section == 0{
-            return rowHeight
-        }else{
+        if indexPath.section == 1 {
             return UITableView.automaticDimension
+        }else {
+            return rowHeight
         }
     }
     
@@ -216,6 +224,7 @@ extension HomeViewController : SearchLocationDelegate, SearchJobTitleDelegate, S
     func sendData(typeID: Int, typeText: String) {
         let vc = ListMoreViewController.create()
         vc.typeID = typeID
+        vc.typeText = typeText
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

@@ -15,6 +15,10 @@ class JobPartTimeTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         contentView.addSubview(itemView)
-        contentView.heightAnchor.constraint(equalTo: itemView.heightAnchor).isActive = true
+       
+    }
+    
+    func setupView()-> CGFloat {
+        return itemView.height
     }
 }

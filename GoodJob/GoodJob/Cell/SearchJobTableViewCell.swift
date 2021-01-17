@@ -44,9 +44,9 @@ class SearchJobTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         self.selectionStyle = .none
-        setupView()
         tapToVC()
         searchJob.delegate = self
+        setupView()
     }
 
     func setupView() {

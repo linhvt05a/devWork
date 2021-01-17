@@ -15,8 +15,10 @@ class JobHightSalaryTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         contentView.addSubview(itemView)
-        contentView.heightAnchor.constraint(equalTo: itemView.heightAnchor).isActive = true
+        
     }
-
+    func setupView()-> CGFloat {
+        return itemView.height
+    }
    
 }
