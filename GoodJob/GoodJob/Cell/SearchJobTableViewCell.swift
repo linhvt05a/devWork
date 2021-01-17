@@ -18,6 +18,10 @@ protocol SearchJobTitleDelegate: class {
 protocol SearchAllJobDelegate: class {
     func gotoViewAllResult()
 }
+
+protocol TextSearchBindDelegate: class {
+    func searchText(text: String)
+}
 class SearchJobTableViewCell: UITableViewCell {
 
     @IBOutlet weak var containerView: UIView!
@@ -34,6 +38,7 @@ class SearchJobTableViewCell: UITableViewCell {
     weak var locationDelegate: SearchLocationDelegate?
     weak var jobtitleDelegate: SearchJobTitleDelegate?
     weak var viewAllJobDelegate: SearchAllJobDelegate?
+    weak var textdelegate: TextSearchBindDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -90,7 +95,7 @@ class SearchJobTableViewCell: UITableViewCell {
 
 extension SearchJobTableViewCell : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print(searchText)
+        textdelegate?.searchText(text: searchText)
     }
 }
 

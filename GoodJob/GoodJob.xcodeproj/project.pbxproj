@@ -49,6 +49,9 @@
 		5BDAEDD525B43B2600F4108B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDAEDD425B43B2500F4108B /* LocationModel.swift */; };
 		5BDAEDDA25B43B8700F4108B /* MajorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDAEDD925B43B8700F4108B /* MajorModel.swift */; };
 		5BDAEDE125B4413300F4108B /* JobResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDAEDDF25B4413300F4108B /* JobResultViewController.xib */; };
+		5BDAEDE925B4668000F4108B /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDAEDE825B4667F00F4108B /* SearchModel.swift */; };
+		5BDAEDEF25B4708700F4108B /* ListMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDAEDED25B4708700F4108B /* ListMoreViewController.swift */; };
+		5BDAEDF025B4708700F4108B /* ListMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDAEDEE25B4708700F4108B /* ListMoreViewController.xib */; };
 		5BE6CA5925B14963008CC282 /* JobHotListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE6CA5725B14962008CC282 /* JobHotListTableViewCell.swift */; };
 		5BE6CA5A25B14963008CC282 /* JobHotListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE6CA5825B14962008CC282 /* JobHotListTableViewCell.xib */; };
 		5BE6CA6325B14B03008CC282 /* JobFavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE6CA6125B14B03008CC282 /* JobFavoriteTableViewCell.swift */; };
@@ -137,6 +140,9 @@
 		5BDAEDD425B43B2500F4108B /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		5BDAEDD925B43B8700F4108B /* MajorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorModel.swift; sourceTree = "<group>"; };
 		5BDAEDDF25B4413300F4108B /* JobResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobResultViewController.xib; sourceTree = "<group>"; };
+		5BDAEDE825B4667F00F4108B /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		5BDAEDED25B4708700F4108B /* ListMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMoreViewController.swift; sourceTree = "<group>"; };
+		5BDAEDEE25B4708700F4108B /* ListMoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListMoreViewController.xib; sourceTree = "<group>"; };
 		5BE6CA5725B14962008CC282 /* JobHotListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHotListTableViewCell.swift; sourceTree = "<group>"; };
 		5BE6CA5825B14962008CC282 /* JobHotListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobHotListTableViewCell.xib; sourceTree = "<group>"; };
 		5BE6CA6125B14B03008CC282 /* JobFavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFavoriteTableViewCell.swift; sourceTree = "<group>"; };
@@ -237,6 +243,7 @@
 				5B2F7C3E25B38E4D0066F2B8 /* JobResultViewController.swift */,
 				5B2F7C3125B38C650066F2B8 /* JobLocationViewController.swift */,
 				5B2F7C3925B38CB70066F2B8 /* JobTitleViewController.swift */,
+				5BDAEDED25B4708700F4108B /* ListMoreViewController.swift */,
 			);
 			path = JobView;
 			sourceTree = "<group>";
@@ -368,6 +375,7 @@
 			children = (
 				5BDAEDD425B43B2500F4108B /* LocationModel.swift */,
 				5BDAEDD925B43B8700F4108B /* MajorModel.swift */,
+				5BDAEDE825B4667F00F4108B /* SearchModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -383,6 +391,7 @@
 				5BDAEDAC25B3FEC600F4108B /* LocationViewController.xib */,
 				5BDAEDC025B4068B00F4108B /* JobTitleViewController.xib */,
 				5BDAEDDF25B4413300F4108B /* JobResultViewController.xib */,
+				5BDAEDEE25B4708700F4108B /* ListMoreViewController.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -534,6 +543,7 @@
 				5BE6CAAD25B16892008CC282 /* ItemJobView.xib in Resources */,
 				5BE6CA6425B14B03008CC282 /* JobFavoriteTableViewCell.xib in Resources */,
 				5BDAEDC225B4068B00F4108B /* JobTitleViewController.xib in Resources */,
+				5BDAEDF025B4708700F4108B /* ListMoreViewController.xib in Resources */,
 				5BE6CA7125B14D33008CC282 /* SectionHeaderView.xib in Resources */,
 				5BE6CA9D25B160BB008CC282 /* JobInternTableViewCell.xib in Resources */,
 				5BDAEDAE25B3FEC600F4108B /* LocationViewController.xib in Resources */,
@@ -642,6 +652,7 @@
 				5BD66FBD25B00990009D2CDC /* Extension-uiview.swift in Sources */,
 				5BDAEDDA25B43B8700F4108B /* MajorModel.swift in Sources */,
 				5BE6CA8425B16054008CC282 /* JobManagerTableViewCell.swift in Sources */,
+				5BDAEDEF25B4708700F4108B /* ListMoreViewController.swift in Sources */,
 				5BDAEDB725B4020B00F4108B /* LocationTableViewCell.swift in Sources */,
 				5BB055AF25B2A9F7003EBC81 /* GoodJob.swift in Sources */,
 				5B62AAC625B07481006CA057 /* HomeListView.swift in Sources */,
@@ -655,6 +666,7 @@
 				5BB055C025B2B01F003EBC81 /* SliderTableViewCell.swift in Sources */,
 				5BE6CA7A25B15E42008CC282 /* JobHightSalaryTableViewCell.swift in Sources */,
 				5BDAEDD525B43B2600F4108B /* LocationModel.swift in Sources */,
+				5BDAEDE925B4668000F4108B /* SearchModel.swift in Sources */,
 				5BE6CAA825B1687F008CC282 /* ItemJobView.swift in Sources */,
 				5BE6CA5925B14963008CC282 /* JobHotListTableViewCell.swift in Sources */,
 				5BD66F5E25AFEFE8009D2CDC /* AppDelegate.swift in Sources */,

@@ -10,22 +10,26 @@ import UIKit
 class JobResultViewController: UIViewController {
     
     let headerView = HeaderView.loadViewFromXib()
+    
     var jobTitle = ""
     var jobLocation = ""
+    
     var jobID:Int?
     var locID:Int?
+    var textSearch: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.titleView = headerView
         headerView.leftBtn.addTarget(self, action: #selector(popToVC), for: .touchUpInside)
         navigationItem.hidesBackButton = true
-        // Do any additional setup after loading the view.
+    
     }
     override func viewWillAppear(_ animated: Bool) {
         if jobTitle == "" && jobLocation == "" {
-            headerView.setupView(title: "Tất cả việc làm liên quan", left: "icons8-left-arrow-40")
+            headerView.setupView(title: "Tất cả việc làm bạn quan tâm", left: "icons8-left-arrow-40")
         }else{
-            headerView.setupView(title: "Có 1234,0 việc làm \(jobTitle) tại \(jobLocation)", left: "icons8-left-arrow-40")
+            headerView.setupView(title: "Việc làm \(jobTitle) tại \(jobLocation)", left: "icons8-left-arrow-40")
         }
     }
     class func create() -> JobResultViewController {

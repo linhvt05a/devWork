@@ -20,6 +20,10 @@ class HomeViewController: UIViewController{
     var jobName  = [MajorModel(majorID: 0, majorName: "-- Tất cả ngành nghề --")]
     var location  = [LocationModel(locID: 0, locName: "-- Tất cả địa điểm --")]
     
+    var textSeach = ""
+    var locID = 0
+    var jobID = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.9803065658, green: 0.9804469943, blue: 0.9802758098, alpha: 1)
@@ -88,6 +92,7 @@ extension HomeViewController :UITableViewDataSource {
             cell.locationDelegate = self
             cell.jobtitleDelegate = self
             cell.viewAllJobDelegate = self
+            cell.textdelegate = self
             
             return cell
         }
@@ -146,11 +151,14 @@ extension HomeViewController :UITableViewDataSource {
 }
 
 extension HomeViewController : UITableViewDelegate{
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let sectionView = SectionHeaderView.loadViewFromXib()
         sectionView.width = homeView.width
+        sectionView.delegate = self
         if section == 2 {
             sectionView.setupView(letfIcon: "icons8-start-40", title: "VIỆC LÀM TỐT NHẤT", nextTitle: "Xem thêm", arrowIcon: "icons8-double-right-40", index: 2)
+
             return sectionView
         }
         if section == 3 {
@@ -203,7 +211,18 @@ extension HomeViewController : UITableViewDelegate{
     }
 }
 
-extension HomeViewController : SearchLocationDelegate, SearchJobTitleDelegate, SearchAllJobDelegate, SendDataToVCDelegate,SendDataLocationFieldDelegate {
+extension HomeViewController : SearchLocationDelegate, SearchJobTitleDelegate, SearchAllJobDelegate, SendDataToVCDelegate,SendDataLocationFieldDelegate, TextSearchBindDelegate,SendDataViewMoreDelegate {
+    func sendData(typeID: Int) {
+        let vc = ListMoreViewController.create()
+        vc.typeID = typeID
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    func searchText(text: String) {
+        self.textSeach = text
+    }
+    
     func sendLocation(location: LocationModel) {
         self.location.append(location)
         self.homeView.homeList.reloadData()
@@ -247,6 +266,7 @@ extension HomeViewController : SearchLocationDelegate, SearchJobTitleDelegate, S
                 vc.jobTitle = k.majorName
             }
         }
+        vc.textSearch = textSeach
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
