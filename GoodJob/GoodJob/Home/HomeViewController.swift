@@ -7,13 +7,18 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+
+
+class HomeViewController: UIViewController{
     
+    var jobViewVC : JobTitleViewController?
     let headerView = HeaderView.loadViewFromXib()
     let homeView = HomeListView.loadViewFromXib()
     var rowHeight = 0 as CGFloat
     var arr = ["06577d261edb9ec","","","","","","","","","","","","","","","","","","",""]
     var currenIndex = 0
+    var jobName  = [MajorModel(majorID: 0, majorName: "-- Tất cả ngành nghề --")]
+    var location  = [LocationModel(locID: 0, locName: "-- Tất cả địa điểm --")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,27 +27,33 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         
-        headerView.setupView(title: "Jobs News")
+        headerView.setupView(title: "Jobs News", left: "")
         headerView.leftBtn.addTarget(self, action: #selector(showProfile), for: .touchUpInside)
         headerView.rightBtn.addTarget(self, action: #selector(showLogin), for: .touchUpInside)
-        config()
-    }
-    func config(){
-        view.addSubview(homeView)
-        homeView.center = view.center
-        homeView.top = view.top
-        homeView.height = view.height
         
+        view.addSubview(homeView)
         homeView.registerCell()
         homeView.homeList.dataSource = self
         homeView.homeList.delegate = self
+        homeView.center = view.center
+        homeView.top = view.top
+        homeView.height = view.height
     }
+    
     
     @objc func showProfile(){
         print("view profile")
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        homeView.homeList.reloadData()
+    }
+    
     @objc func showLogin(){
-        print("vui long login")
+        let vc = LoginViewController()
+        vc.view.backgroundColor = .red
+        vc.modalPresentationStyle = .formSheet
+        present(vc, animated: true, completion: nil)
     }
 }
 
@@ -55,7 +66,7 @@ extension HomeViewController :UITableViewDataSource {
             return 1
         }
         else {
-            return 2
+            return 10
         }
     }
     
@@ -68,9 +79,16 @@ extension HomeViewController :UITableViewDataSource {
         
         if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SearchJobTableViewCell.self), for: indexPath) as! SearchJobTableViewCell
+            for i in jobName {
+                cell.jobTitle.text = i.majorName
+            }
+            for k in location {
+                cell.locationName.text = k.locName
+            }
             cell.locationDelegate = self
             cell.jobtitleDelegate = self
             cell.viewAllJobDelegate = self
+            
             return cell
         }
         
@@ -185,28 +203,53 @@ extension HomeViewController : UITableViewDelegate{
     }
 }
 
-extension HomeViewController : SearchLocationDelegate, SearchJobTitleDelegate, SearchAllJobDelegate {
-
+extension HomeViewController : SearchLocationDelegate, SearchJobTitleDelegate, SearchAllJobDelegate, SendDataToVCDelegate,SendDataLocationFieldDelegate {
+    func sendLocation(location: LocationModel) {
+        self.location.append(location)
+        self.homeView.homeList.reloadData()
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    func sendData(major: MajorModel) {
+        self.jobName.append(major)
+        self.homeView.homeList.reloadData()
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     func gotolocationVC() {
-       let vc = JobLocationViewController()
-        vc.modalPresentationStyle = .formSheet
-        vc.view.backgroundColor = .white
-        present(vc, animated: true, completion: nil)
+        let vc = JobLocationViewController.create()
+        vc.delegate = self
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func gotoJobtitleVC() {
-        let vc = JobTitleViewController()
-         vc.modalPresentationStyle = .fullScreen
-         vc.view.backgroundColor = .white
-         present(vc, animated: true, completion: nil)
+        let vc = JobTitleViewController.create()
+        vc.delegate = self
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func gotoViewAllResult() {
-        let vc = JobResultViewController()
-         vc.modalPresentationStyle = .fullScreen
-         vc.view.backgroundColor = .white
-         present(vc, animated: true, completion: nil)
+        let vc = JobResultViewController.create()
+        for i in location {
+            if i.locID == 0 {
+                
+                vc.jobLocation = ""
+            }else {
+                vc.locID = i.locID
+                vc.jobLocation = i.locName
+            }
+        }
+        for k in jobName {
+            if k.majorID == 0 {
+                vc.jobTitle = ""
+            }else {
+                vc.jobID = k.majorID
+                vc.jobTitle = k.majorName
+            }
+        }
+        self.navigationController?.pushViewController(vc, animated: true)
     }
+    
 }
 
 

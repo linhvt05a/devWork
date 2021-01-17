@@ -30,7 +30,7 @@ class SearchJobTableViewCell: UITableViewCell {
     @IBOutlet weak var finderBestJob: UILabel!
     @IBOutlet weak var locationName: UILabel!
     @IBOutlet weak var jobTitle: UILabel!
-    
+
     weak var locationDelegate: SearchLocationDelegate?
     weak var jobtitleDelegate: SearchJobTitleDelegate?
     weak var viewAllJobDelegate: SearchAllJobDelegate?
@@ -41,11 +41,9 @@ class SearchJobTableViewCell: UITableViewCell {
         self.selectionStyle = .none
         setupView()
         tapToVC()
-        
         searchJob.delegate = self
     }
 
-   
     func setupView() {
         self.getTextField(searchJob: searchJob)
         containerView.cornerRadius = 8
@@ -95,3 +93,4 @@ extension SearchJobTableViewCell : UISearchBarDelegate {
         print(searchText)
     }
 }
+

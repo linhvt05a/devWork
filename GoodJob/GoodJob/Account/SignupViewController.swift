@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SignupViewController.swift
 //  GoodJob
 //
 //  Created by hoang on 17/01/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class JobLocationViewController: UIViewController {
+class SignupViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

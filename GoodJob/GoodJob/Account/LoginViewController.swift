@@ -1,5 +1,5 @@
 //
-//  JobResultViewController.swift
+//  LoginViewController.swift
 //  GoodJob
 //
 //  Created by hoang on 17/01/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class JobResultViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
