@@ -9,10 +9,11 @@ import UIKit
 
 class ListMoreViewController: UIViewController {
     var typeID = 0
+    var typeText = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-            print(typeID)
-        // Do any additional setup after loading the view.
+           
     }
 
     class func create() -> ListMoreViewController {

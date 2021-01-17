@@ -212,12 +212,12 @@ extension HomeViewController : UITableViewDelegate{
 }
 
 extension HomeViewController : SearchLocationDelegate, SearchJobTitleDelegate, SearchAllJobDelegate, SendDataToVCDelegate,SendDataLocationFieldDelegate, TextSearchBindDelegate,SendDataViewMoreDelegate {
-    func sendData(typeID: Int) {
+    
+    func sendData(typeID: Int, typeText: String) {
         let vc = ListMoreViewController.create()
         vc.typeID = typeID
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
     
     func searchText(text: String) {
         self.textSeach = text
