@@ -27,9 +27,9 @@ class JobResultViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         if jobTitle == "" && jobLocation == "" {
-            headerView.setupView(title: "Tất cả việc làm bạn quan tâm", left: "icons8-left-arrow-40")
+            headerView.setupView(title: "Tất cả việc làm bạn quan tâm", left: "icons8-left-arrow-40", btnTitle: "")
         }else{
-            headerView.setupView(title: "Việc làm \(jobTitle) tại \(jobLocation)", left: "icons8-left-arrow-40")
+            headerView.setupView(title: "Việc làm \(jobTitle) tại \(jobLocation)", left: "icons8-left-arrow-40", btnTitle: "")
         }
     }
     class func create() -> JobResultViewController {

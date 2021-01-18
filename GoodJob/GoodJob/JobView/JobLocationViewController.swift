@@ -27,7 +27,7 @@ class JobLocationViewController: UIViewController {
         navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         navigationItem.hidesBackButton = true
         
-        headerView.setupView(title: "Select a location", left: "icons8-left-arrow-40")
+        headerView.setupView(title: "Select a location", left: "icons8-left-arrow-40", btnTitle: "" )
         headerView.leftBtn.addTarget(self, action: #selector(popToVc), for: .touchUpInside)
         config()
     }

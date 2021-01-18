@@ -17,7 +17,6 @@
 		5B2F7C3225B38C650066F2B8 /* JobLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F7C3125B38C650066F2B8 /* JobLocationViewController.swift */; };
 		5B2F7C3A25B38CB70066F2B8 /* JobTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F7C3925B38CB70066F2B8 /* JobTitleViewController.swift */; };
 		5B2F7C3F25B38E4D0066F2B8 /* JobResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F7C3E25B38E4D0066F2B8 /* JobResultViewController.swift */; };
-		5B2F7C4425B390D90066F2B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F7C4325B390D90066F2B8 /* LoginViewController.swift */; };
 		5B62AAC625B07481006CA057 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62AAC525B07481006CA057 /* HomeListView.swift */; };
 		5B62AACB25B07499006CA057 /* HomeListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B62AACA25B07499006CA057 /* HomeListView.xib */; };
 		5B856DC925B2A0F900AF24FD /* HomeStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B856DC825B2A0F900AF24FD /* HomeStoryBoard.storyboard */; };
@@ -76,13 +75,16 @@
 		5BE6CA9D25B160BB008CC282 /* JobInternTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE6CA9B25B160BB008CC282 /* JobInternTableViewCell.xib */; };
 		5BE6CAA825B1687F008CC282 /* ItemJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE6CAA725B1687F008CC282 /* ItemJobView.swift */; };
 		5BE6CAAD25B16892008CC282 /* ItemJobView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE6CAAC25B16892008CC282 /* ItemJobView.xib */; };
-		5BF4BFD525B53F7F009E7C03 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4BFD425B53F7F009E7C03 /* LoginViewController.xib */; };
 		5BF4BFE725B54FF9009E7C03 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4BFE625B54FF9009E7C03 /* SignUpView.swift */; };
 		5BF4BFF225B551D2009E7C03 /* SignupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4BFF025B551D2009E7C03 /* SignupTableViewCell.swift */; };
 		5BF4BFF325B551D2009E7C03 /* SignupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4BFF125B551D2009E7C03 /* SignupTableViewCell.xib */; };
 		5BF4C00225B5529F009E7C03 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4C00025B5529F009E7C03 /* RegisterViewController.swift */; };
 		5BF4C00325B5529F009E7C03 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4C00125B5529F009E7C03 /* RegisterViewController.xib */; };
 		5BF4C00B25B55A43009E7C03 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4C00A25B55A42009E7C03 /* SignUpView.xib */; };
+		5BF4C01425B59B6F009E7C03 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4C01225B59B6F009E7C03 /* SignInViewController.swift */; };
+		5BF4C01525B59B6F009E7C03 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4C01325B59B6F009E7C03 /* SignInViewController.xib */; };
+		5BF4C01B25B5AD3D009E7C03 /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4C01925B5AD3C009E7C03 /* SignInTableViewCell.swift */; };
+		5BF4C01C25B5AD3D009E7C03 /* SignInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4C01A25B5AD3C009E7C03 /* SignInTableViewCell.xib */; };
 		7A8FAFAB4820A011E7F973CF /* Pods_GoodJob_GoodJobUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB7D8E6BDD78953471FF3FF /* Pods_GoodJob_GoodJobUITests.framework */; };
 		DDB3F13AC8EC8A2B9F962860 /* Pods_GoodJob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB88A34BAF1A4850E603F41 /* Pods_GoodJob.framework */; };
 /* End PBXBuildFile section */
@@ -117,7 +119,6 @@
 		5B2F7C3125B38C650066F2B8 /* JobLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobLocationViewController.swift; sourceTree = "<group>"; };
 		5B2F7C3925B38CB70066F2B8 /* JobTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTitleViewController.swift; sourceTree = "<group>"; };
 		5B2F7C3E25B38E4D0066F2B8 /* JobResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobResultViewController.swift; sourceTree = "<group>"; };
-		5B2F7C4325B390D90066F2B8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5B62AAC525B07481006CA057 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
 		5B62AACA25B07499006CA057 /* HomeListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeListView.xib; sourceTree = "<group>"; };
 		5B856DC825B2A0F900AF24FD /* HomeStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryBoard.storyboard; sourceTree = "<group>"; };
@@ -180,13 +181,16 @@
 		5BE6CA9B25B160BB008CC282 /* JobInternTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobInternTableViewCell.xib; sourceTree = "<group>"; };
 		5BE6CAA725B1687F008CC282 /* ItemJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemJobView.swift; sourceTree = "<group>"; };
 		5BE6CAAC25B16892008CC282 /* ItemJobView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemJobView.xib; sourceTree = "<group>"; };
-		5BF4BFD425B53F7F009E7C03 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		5BF4BFE625B54FF9009E7C03 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		5BF4BFF025B551D2009E7C03 /* SignupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTableViewCell.swift; sourceTree = "<group>"; };
 		5BF4BFF125B551D2009E7C03 /* SignupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupTableViewCell.xib; sourceTree = "<group>"; };
 		5BF4C00025B5529F009E7C03 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5BF4C00125B5529F009E7C03 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		5BF4C00A25B55A42009E7C03 /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
+		5BF4C01225B59B6F009E7C03 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		5BF4C01325B59B6F009E7C03 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		5BF4C01925B5AD3C009E7C03 /* SignInTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTableViewCell.swift; sourceTree = "<group>"; };
+		5BF4C01A25B5AD3C009E7C03 /* SignInTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInTableViewCell.xib; sourceTree = "<group>"; };
 		714E920616310FB97639DADC /* Pods-GoodJob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodJob.debug.xcconfig"; path = "Target Support Files/Pods-GoodJob/Pods-GoodJob.debug.xcconfig"; sourceTree = "<group>"; };
 		868FF6474B9F208B07854240 /* Pods-GoodJob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodJob.release.xcconfig"; path = "Target Support Files/Pods-GoodJob/Pods-GoodJob.release.xcconfig"; sourceTree = "<group>"; };
 		961D1358909D72585B7D4D2A /* Pods-GoodJobTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodJobTests.debug.xcconfig"; path = "Target Support Files/Pods-GoodJobTests/Pods-GoodJobTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -251,6 +255,7 @@
 				5BDAEDB625B4020B00F4108B /* LocationTableViewCell.xib */,
 				5BDAEDCA25B4082200F4108B /* JobTitleTableViewCell.xib */,
 				5BF4BFF125B551D2009E7C03 /* SignupTableViewCell.xib */,
+				5BF4C01A25B5AD3C009E7C03 /* SignInTableViewCell.xib */,
 			);
 			path = CellXib;
 			sourceTree = "<group>";
@@ -258,10 +263,10 @@
 		5B2F7C4D25B391050066F2B8 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				5B2F7C4325B390D90066F2B8 /* LoginViewController.swift */,
-				5BF4BFD425B53F7F009E7C03 /* LoginViewController.xib */,
 				5BF4C00025B5529F009E7C03 /* RegisterViewController.swift */,
 				5BF4C00125B5529F009E7C03 /* RegisterViewController.xib */,
+				5BF4C01225B59B6F009E7C03 /* SignInViewController.swift */,
+				5BF4C01325B59B6F009E7C03 /* SignInViewController.xib */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				5BDAEDB525B4020B00F4108B /* LocationTableViewCell.swift */,
 				5BDAEDC925B4082200F4108B /* JobTitleTableViewCell.swift */,
 				5BF4BFF025B551D2009E7C03 /* SignupTableViewCell.swift */,
+				5BF4C01925B5AD3C009E7C03 /* SignInTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -608,7 +614,6 @@
 				5BE6CA8F25B16072008CC282 /* JobITTableViewCell.xib in Resources */,
 				5B856DC925B2A0F900AF24FD /* HomeStoryBoard.storyboard in Resources */,
 				5B62AACB25B07499006CA057 /* HomeListView.xib in Resources */,
-				5BF4BFD525B53F7F009E7C03 /* LoginViewController.xib in Resources */,
 				5BD44DE925B4A91C00408853 /* ProfileViewController.xib in Resources */,
 				5BF4C00325B5529F009E7C03 /* RegisterViewController.xib in Resources */,
 				5BB055C125B2B01F003EBC81 /* SliderTableViewCell.xib in Resources */,
@@ -617,8 +622,10 @@
 				5BE6CA8525B16054008CC282 /* JobManagerTableViewCell.xib in Resources */,
 				5BE6CAAD25B16892008CC282 /* ItemJobView.xib in Resources */,
 				5BE6CA6425B14B03008CC282 /* JobFavoriteTableViewCell.xib in Resources */,
+				5BF4C01C25B5AD3D009E7C03 /* SignInTableViewCell.xib in Resources */,
 				5BF4BFF325B551D2009E7C03 /* SignupTableViewCell.xib in Resources */,
 				5BDAEDC225B4068B00F4108B /* JobTitleViewController.xib in Resources */,
+				5BF4C01525B59B6F009E7C03 /* SignInViewController.xib in Resources */,
 				5BDAEDF025B4708700F4108B /* ListMoreViewController.xib in Resources */,
 				5BE6CA7125B14D33008CC282 /* SectionHeaderView.xib in Resources */,
 				5BE6CA9D25B160BB008CC282 /* JobInternTableViewCell.xib in Resources */,
@@ -725,7 +732,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B2F7C4425B390D90066F2B8 /* LoginViewController.swift in Sources */,
 				5B2F7C3A25B38CB70066F2B8 /* JobTitleViewController.swift in Sources */,
 				5BD44DDB25B4A19900408853 /* TabbarViewController.swift in Sources */,
 				5BD66FBD25B00990009D2CDC /* Extension-uiview.swift in Sources */,
@@ -740,7 +746,9 @@
 				5BDAED8225B395B200F4108B /* JobGroupViewController.swift in Sources */,
 				5BE6CA8E25B16072008CC282 /* JobITTableViewCell.swift in Sources */,
 				5B2F7C3225B38C650066F2B8 /* JobLocationViewController.swift in Sources */,
+				5BF4C01425B59B6F009E7C03 /* SignInViewController.swift in Sources */,
 				5BA6C23B25B1EE4000658BFA /* ScrollableView.swift in Sources */,
+				5BF4C01B25B5AD3D009E7C03 /* SignInTableViewCell.swift in Sources */,
 				5BDAED9F25B3FD7F00F4108B /* JobLocationView.swift in Sources */,
 				5B15BCBB25B0835A00933BBE /* SearchJobTableViewCell.swift in Sources */,
 				5BF4BFE725B54FF9009E7C03 /* SignUpView.swift in Sources */,

@@ -31,10 +31,8 @@ class HomeViewController: UIViewController{
         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
 
-        headerView.setupView(title: "Jobs News", left: "")
-        headerView.leftBtn.addTarget(self, action: #selector(showProfile), for: .touchUpInside)
-        headerView.rightBtn.addTarget(self, action: #selector(showSignup), for: .touchUpInside)
-        
+        headerView.setupView(title: "Jobs News", left: "", btnTitle: "Sign In")
+    
         view.addSubview(homeView)
         homeView.registerCell()
         homeView.homeList.dataSource = self
@@ -44,20 +42,12 @@ class HomeViewController: UIViewController{
         homeView.height = view.height
     }
     
-    
-    @objc func showProfile(){
-        print("view profile")
-    }
+ 
     
     override func viewDidAppear(_ animated: Bool) {
         homeView.homeList.reloadData()
     }
     
-    @objc func showSignup(){
-        let vc = RegisterViewController.create()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
-    }
 }
 
 extension HomeViewController :UITableViewDataSource {

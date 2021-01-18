@@ -15,6 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="0.46102361590000002" green="0.51257010089999999" blue="0.49741284879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <point key="canvasLocation" x="-184" y="64"/>
         </tableViewCell>
     </objects>
