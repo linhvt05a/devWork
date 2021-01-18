@@ -30,7 +30,7 @@ class TabbarViewController: UIViewController {
             return
         }
         let titles = ["","","",""]
-        let images = ["icons8-job-seeker-40 (1)","icons8-checked-user-male-40","icons8-history-book-40","icons8-inbox-settings-40"]
+        let images = ["icons8-job-seeker-40 (1)","icons8-add-administrator-40","icons8-history-book-40","icons8-inbox-settings-40"]
         
         for i in 0..<items.count {
             items[i].title = titles[i]

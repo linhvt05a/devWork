@@ -7,8 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="GoodJob" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="GoodJob" customModuleProvider="target">
             <connections>
+                <outlet property="signupView" destination="OiT-FY-mY7" id="I5E-kx-UMx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,9 +17,20 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OiT-FY-mY7">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="132" y="64"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OiT-FY-mY7" secondAttribute="trailing" id="3Jf-JO-z2V"/>
+                <constraint firstItem="OiT-FY-mY7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="R8v-Vx-qZ9"/>
+                <constraint firstAttribute="bottom" secondItem="OiT-FY-mY7" secondAttribute="bottom" id="fR2-uF-gRh"/>
+                <constraint firstItem="OiT-FY-mY7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jJ9-y7-0zv"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="46"/>
         </view>
     </objects>
     <resources>

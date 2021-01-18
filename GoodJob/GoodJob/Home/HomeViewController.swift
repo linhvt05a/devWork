@@ -33,7 +33,7 @@ class HomeViewController: UIViewController{
 
         headerView.setupView(title: "Jobs News", left: "")
         headerView.leftBtn.addTarget(self, action: #selector(showProfile), for: .touchUpInside)
-        headerView.rightBtn.addTarget(self, action: #selector(showLogin), for: .touchUpInside)
+        headerView.rightBtn.addTarget(self, action: #selector(showSignup), for: .touchUpInside)
         
         view.addSubview(homeView)
         homeView.registerCell()
@@ -53,10 +53,9 @@ class HomeViewController: UIViewController{
         homeView.homeList.reloadData()
     }
     
-    @objc func showLogin(){
-        let vc = LoginViewController()
-        vc.view.backgroundColor = .red
-        vc.modalPresentationStyle = .formSheet
+    @objc func showSignup(){
+        let vc = RegisterViewController.create()
+        vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
     }
 }
