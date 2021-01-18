@@ -20,6 +20,12 @@
 		5B62AAC625B07481006CA057 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62AAC525B07481006CA057 /* HomeListView.swift */; };
 		5B62AACB25B07499006CA057 /* HomeListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B62AACA25B07499006CA057 /* HomeListView.xib */; };
 		5B856DC925B2A0F900AF24FD /* HomeStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B856DC825B2A0F900AF24FD /* HomeStoryBoard.storyboard */; };
+		5B9D593A25B5C7B700B4E9F5 /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D593925B5C7B700B4E9F5 /* LoginFormView.swift */; };
+		5B9D593F25B5C7CF00B4E9F5 /* LoginFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D593E25B5C7CF00B4E9F5 /* LoginFormView.xib */; };
+		5B9D594425B5CE2000B4E9F5 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D594325B5CE2000B4E9F5 /* ButtonView.swift */; };
+		5B9D594925B5CE3000B4E9F5 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D594825B5CE3000B4E9F5 /* ButtonView.xib */; };
+		5B9D594E25B5D0F200B4E9F5 /* SupportAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D594D25B5D0F100B4E9F5 /* SupportAccountView.xib */; };
+		5B9D595325B5D10E00B4E9F5 /* SupportAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D595225B5D10E00B4E9F5 /* SupportAccountView.swift */; };
 		5BA6C23B25B1EE4000658BFA /* ScrollableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA6C23A25B1EE4000658BFA /* ScrollableView.swift */; };
 		5BA6C24025B1EEA100658BFA /* ScrollableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA6C23F25B1EEA000658BFA /* ScrollableView.xib */; };
 		5BA6C24A25B1F0F500658BFA /* ScrollViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA6C24825B1F0F500658BFA /* ScrollViewCollectionViewCell.xib */; };
@@ -43,6 +49,10 @@
 		5BD66FBD25B00990009D2CDC /* Extension-uiview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66FBC25B00990009D2CDC /* Extension-uiview.swift */; };
 		5BD66FC225B00B4D009D2CDC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD66FC125B00B4C009D2CDC /* Constant.swift */; };
 		5BD66FCA25B01D09009D2CDC /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD66FC925B01D09009D2CDC /* HeaderView.xib */; };
+		5BD8F9DC25B5B077007745C2 /* SocialLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8F9DB25B5B076007745C2 /* SocialLoginView.swift */; };
+		5BD8F9E125B5B09C007745C2 /* SocialLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD8F9E025B5B09C007745C2 /* SocialLoginView.xib */; };
+		5BD8F9E625B5BE9B007745C2 /* BottomLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8F9E525B5BE9B007745C2 /* BottomLineView.swift */; };
+		5BD8F9EE25B5BEC1007745C2 /* BottomLineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD8F9ED25B5BEC1007745C2 /* BottomLineView.xib */; };
 		5BDAED8225B395B200F4108B /* JobGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDAED8125B395B200F4108B /* JobGroupViewController.swift */; };
 		5BDAED9F25B3FD7F00F4108B /* JobLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDAED9E25B3FD7F00F4108B /* JobLocationView.swift */; };
 		5BDAEDAE25B3FEC600F4108B /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDAEDAC25B3FEC600F4108B /* LocationViewController.xib */; };
@@ -75,12 +85,10 @@
 		5BE6CA9D25B160BB008CC282 /* JobInternTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE6CA9B25B160BB008CC282 /* JobInternTableViewCell.xib */; };
 		5BE6CAA825B1687F008CC282 /* ItemJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE6CAA725B1687F008CC282 /* ItemJobView.swift */; };
 		5BE6CAAD25B16892008CC282 /* ItemJobView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE6CAAC25B16892008CC282 /* ItemJobView.xib */; };
-		5BF4BFE725B54FF9009E7C03 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4BFE625B54FF9009E7C03 /* SignUpView.swift */; };
 		5BF4BFF225B551D2009E7C03 /* SignupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4BFF025B551D2009E7C03 /* SignupTableViewCell.swift */; };
 		5BF4BFF325B551D2009E7C03 /* SignupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4BFF125B551D2009E7C03 /* SignupTableViewCell.xib */; };
 		5BF4C00225B5529F009E7C03 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4C00025B5529F009E7C03 /* RegisterViewController.swift */; };
 		5BF4C00325B5529F009E7C03 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4C00125B5529F009E7C03 /* RegisterViewController.xib */; };
-		5BF4C00B25B55A43009E7C03 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4C00A25B55A42009E7C03 /* SignUpView.xib */; };
 		5BF4C01425B59B6F009E7C03 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4C01225B59B6F009E7C03 /* SignInViewController.swift */; };
 		5BF4C01525B59B6F009E7C03 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4C01325B59B6F009E7C03 /* SignInViewController.xib */; };
 		5BF4C01B25B5AD3D009E7C03 /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4C01925B5AD3C009E7C03 /* SignInTableViewCell.swift */; };
@@ -122,6 +130,12 @@
 		5B62AAC525B07481006CA057 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
 		5B62AACA25B07499006CA057 /* HomeListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeListView.xib; sourceTree = "<group>"; };
 		5B856DC825B2A0F900AF24FD /* HomeStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryBoard.storyboard; sourceTree = "<group>"; };
+		5B9D593925B5C7B700B4E9F5 /* LoginFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
+		5B9D593E25B5C7CF00B4E9F5 /* LoginFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginFormView.xib; sourceTree = "<group>"; };
+		5B9D594325B5CE2000B4E9F5 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		5B9D594825B5CE3000B4E9F5 /* ButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
+		5B9D594D25B5D0F100B4E9F5 /* SupportAccountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SupportAccountView.xib; sourceTree = "<group>"; };
+		5B9D595225B5D10E00B4E9F5 /* SupportAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportAccountView.swift; sourceTree = "<group>"; };
 		5BA6C23A25B1EE4000658BFA /* ScrollableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableView.swift; sourceTree = "<group>"; };
 		5BA6C23F25B1EEA000658BFA /* ScrollableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollableView.xib; sourceTree = "<group>"; };
 		5BA6C24825B1F0F500658BFA /* ScrollViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -149,6 +163,10 @@
 		5BD66FBC25B00990009D2CDC /* Extension-uiview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-uiview.swift"; sourceTree = "<group>"; };
 		5BD66FC125B00B4C009D2CDC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		5BD66FC925B01D09009D2CDC /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		5BD8F9DB25B5B076007745C2 /* SocialLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginView.swift; sourceTree = "<group>"; };
+		5BD8F9E025B5B09C007745C2 /* SocialLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialLoginView.xib; sourceTree = "<group>"; };
+		5BD8F9E525B5BE9B007745C2 /* BottomLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomLineView.swift; sourceTree = "<group>"; };
+		5BD8F9ED25B5BEC1007745C2 /* BottomLineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomLineView.xib; sourceTree = "<group>"; };
 		5BDAED8125B395B200F4108B /* JobGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobGroupViewController.swift; sourceTree = "<group>"; };
 		5BDAED9E25B3FD7F00F4108B /* JobLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobLocationView.swift; sourceTree = "<group>"; };
 		5BDAEDAC25B3FEC600F4108B /* LocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
@@ -181,12 +199,10 @@
 		5BE6CA9B25B160BB008CC282 /* JobInternTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobInternTableViewCell.xib; sourceTree = "<group>"; };
 		5BE6CAA725B1687F008CC282 /* ItemJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemJobView.swift; sourceTree = "<group>"; };
 		5BE6CAAC25B16892008CC282 /* ItemJobView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemJobView.xib; sourceTree = "<group>"; };
-		5BF4BFE625B54FF9009E7C03 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		5BF4BFF025B551D2009E7C03 /* SignupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTableViewCell.swift; sourceTree = "<group>"; };
 		5BF4BFF125B551D2009E7C03 /* SignupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupTableViewCell.xib; sourceTree = "<group>"; };
 		5BF4C00025B5529F009E7C03 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5BF4C00125B5529F009E7C03 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
-		5BF4C00A25B55A42009E7C03 /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
 		5BF4C01225B59B6F009E7C03 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5BF4C01325B59B6F009E7C03 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		5BF4C01925B5AD3C009E7C03 /* SignInTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTableViewCell.swift; sourceTree = "<group>"; };
@@ -467,7 +483,11 @@
 				5BDAEDC025B4068B00F4108B /* JobTitleViewController.xib */,
 				5BDAEDDF25B4413300F4108B /* JobResultViewController.xib */,
 				5BDAEDEE25B4708700F4108B /* ListMoreViewController.xib */,
-				5BF4C00A25B55A42009E7C03 /* SignUpView.xib */,
+				5BD8F9E025B5B09C007745C2 /* SocialLoginView.xib */,
+				5BD8F9ED25B5BEC1007745C2 /* BottomLineView.xib */,
+				5B9D593E25B5C7CF00B4E9F5 /* LoginFormView.xib */,
+				5B9D594825B5CE3000B4E9F5 /* ButtonView.xib */,
+				5B9D594D25B5D0F100B4E9F5 /* SupportAccountView.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -481,7 +501,11 @@
 				5B62AAC525B07481006CA057 /* HomeListView.swift */,
 				5BA6C23A25B1EE4000658BFA /* ScrollableView.swift */,
 				5BDAED9E25B3FD7F00F4108B /* JobLocationView.swift */,
-				5BF4BFE625B54FF9009E7C03 /* SignUpView.swift */,
+				5BD8F9DB25B5B076007745C2 /* SocialLoginView.swift */,
+				5BD8F9E525B5BE9B007745C2 /* BottomLineView.swift */,
+				5B9D593925B5C7B700B4E9F5 /* LoginFormView.swift */,
+				5B9D594325B5CE2000B4E9F5 /* ButtonView.swift */,
+				5B9D595225B5D10E00B4E9F5 /* SupportAccountView.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -608,13 +632,16 @@
 				5BDAEDE125B4413300F4108B /* JobResultViewController.xib in Resources */,
 				5BA6C24025B1EEA100658BFA /* ScrollableView.xib in Resources */,
 				5BD66FCA25B01D09009D2CDC /* HeaderView.xib in Resources */,
+				5B9D594925B5CE3000B4E9F5 /* ButtonView.xib in Resources */,
 				5BDAEDCC25B4082200F4108B /* JobTitleTableViewCell.xib in Resources */,
 				5BDAEDB825B4020B00F4108B /* LocationTableViewCell.xib in Resources */,
 				5B15BCBC25B0835A00933BBE /* SearchJobTableViewCell.xib in Resources */,
+				5B9D593F25B5C7CF00B4E9F5 /* LoginFormView.xib in Resources */,
 				5BE6CA8F25B16072008CC282 /* JobITTableViewCell.xib in Resources */,
 				5B856DC925B2A0F900AF24FD /* HomeStoryBoard.storyboard in Resources */,
 				5B62AACB25B07499006CA057 /* HomeListView.xib in Resources */,
 				5BD44DE925B4A91C00408853 /* ProfileViewController.xib in Resources */,
+				5BD8F9E125B5B09C007745C2 /* SocialLoginView.xib in Resources */,
 				5BF4C00325B5529F009E7C03 /* RegisterViewController.xib in Resources */,
 				5BB055C125B2B01F003EBC81 /* SliderTableViewCell.xib in Resources */,
 				5B1BBAC425B1AD7C000BFA55 /* EmployerCollectionViewCell.xib in Resources */,
@@ -628,17 +655,18 @@
 				5BF4C01525B59B6F009E7C03 /* SignInViewController.xib in Resources */,
 				5BDAEDF025B4708700F4108B /* ListMoreViewController.xib in Resources */,
 				5BE6CA7125B14D33008CC282 /* SectionHeaderView.xib in Resources */,
+				5B9D594E25B5D0F200B4E9F5 /* SupportAccountView.xib in Resources */,
 				5BE6CA9D25B160BB008CC282 /* JobInternTableViewCell.xib in Resources */,
 				5BD44DF125B4AB5E00408853 /* HistoryViewController.xib in Resources */,
 				5BDAEDAE25B3FEC600F4108B /* LocationViewController.xib in Resources */,
 				5BD66F6A25AFEFF3009D2CDC /* LaunchScreen.storyboard in Resources */,
 				5B1BBAB425B1A6AF000BFA55 /* EmployerTableViewCell.xib in Resources */,
-				5BF4C00B25B55A43009E7C03 /* SignUpView.xib in Resources */,
 				5BE6CA5A25B14963008CC282 /* JobHotListTableViewCell.xib in Resources */,
 				5BE6CA9625B1609A008CC282 /* JobPartTimeTableViewCell.xib in Resources */,
 				5BE6CA7B25B15E42008CC282 /* JobHightSalaryTableViewCell.xib in Resources */,
 				5BA6C24A25B1F0F500658BFA /* ScrollViewCollectionViewCell.xib in Resources */,
 				5BD66F6725AFEFF3009D2CDC /* Assets.xcassets in Resources */,
+				5BD8F9EE25B5BEC1007745C2 /* BottomLineView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,12 +766,15 @@
 				5BDAEDDA25B43B8700F4108B /* MajorModel.swift in Sources */,
 				5BE6CA8425B16054008CC282 /* JobManagerTableViewCell.swift in Sources */,
 				5BDAEDEF25B4708700F4108B /* ListMoreViewController.swift in Sources */,
+				5B9D594425B5CE2000B4E9F5 /* ButtonView.swift in Sources */,
 				5BDAEDB725B4020B00F4108B /* LocationTableViewCell.swift in Sources */,
 				5BB055AF25B2A9F7003EBC81 /* GoodJob.swift in Sources */,
+				5BD8F9E625B5BE9B007745C2 /* BottomLineView.swift in Sources */,
 				5BF4C00225B5529F009E7C03 /* RegisterViewController.swift in Sources */,
 				5B62AAC625B07481006CA057 /* HomeListView.swift in Sources */,
 				5BE6CA9C25B160BB008CC282 /* JobInternTableViewCell.swift in Sources */,
 				5BDAED8225B395B200F4108B /* JobGroupViewController.swift in Sources */,
+				5B9D595325B5D10E00B4E9F5 /* SupportAccountView.swift in Sources */,
 				5BE6CA8E25B16072008CC282 /* JobITTableViewCell.swift in Sources */,
 				5B2F7C3225B38C650066F2B8 /* JobLocationViewController.swift in Sources */,
 				5BF4C01425B59B6F009E7C03 /* SignInViewController.swift in Sources */,
@@ -751,7 +782,6 @@
 				5BF4C01B25B5AD3D009E7C03 /* SignInTableViewCell.swift in Sources */,
 				5BDAED9F25B3FD7F00F4108B /* JobLocationView.swift in Sources */,
 				5B15BCBB25B0835A00933BBE /* SearchJobTableViewCell.swift in Sources */,
-				5BF4BFE725B54FF9009E7C03 /* SignUpView.swift in Sources */,
 				5BB055C025B2B01F003EBC81 /* SliderTableViewCell.swift in Sources */,
 				5BE6CA7A25B15E42008CC282 /* JobHightSalaryTableViewCell.swift in Sources */,
 				5BD44DD525B494E600408853 /* ScrollViewCollectionViewCell.swift in Sources */,
@@ -764,6 +794,7 @@
 				5B1BBAC325B1AD7C000BFA55 /* EmployerCollectionViewCell.swift in Sources */,
 				5BD66F6025AFEFE9009D2CDC /* SceneDelegate.swift in Sources */,
 				5BDAEDCB25B4082200F4108B /* JobTitleTableViewCell.swift in Sources */,
+				5B9D593A25B5C7B700B4E9F5 /* LoginFormView.swift in Sources */,
 				5BD44DE825B4A91C00408853 /* ProfileViewController.swift in Sources */,
 				5BD66FA125AFF421009D2CDC /* HomeViewController.swift in Sources */,
 				5BD44DF025B4AB5E00408853 /* HistoryViewController.swift in Sources */,
@@ -775,6 +806,7 @@
 				5BE6CA9525B1609A008CC282 /* JobPartTimeTableViewCell.swift in Sources */,
 				5BD66FC225B00B4D009D2CDC /* Constant.swift in Sources */,
 				5B1BBAB325B1A6AF000BFA55 /* EmployerTableViewCell.swift in Sources */,
+				5BD8F9DC25B5B077007745C2 /* SocialLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,19 +8,21 @@
 import UIKit
 
 class SignupTableViewCell: UITableViewCell {
-    let signupView = SignUpView.loadViewFromXib()
+
+    let sociaview = SocialLoginView.loadViewFromNib()
+    let bottomLine = BottomLineView.loadViewFromXib()
     
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
         contentView.backgroundColor = #colorLiteral(red: 0.9572470033, green: 0.9572470033, blue: 0.9572470033, alpha: 1)
-        contentView.addSubview(signupView)
-        signupView.setupView()
+        contentView.addSubview(sociaview)
+        contentView.addSubview(bottomLine)
     }
     
     func setupView() -> CGFloat {
-        contentView.height = signupView.height
-        signupView.width = self.width
+        contentView.height = sociaview.height
+        sociaview.width = self.width
         return contentView.height
     }
 }

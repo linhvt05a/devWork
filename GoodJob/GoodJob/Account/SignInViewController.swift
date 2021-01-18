@@ -10,14 +10,14 @@ import UIKit
 class SignInViewController: UIViewController {
     
     @IBOutlet weak var signinView: UITableView!
-    let rowHeight = 0 as CGFloat
+    var rowHeight = 0 as CGFloat
     let headerView = HeaderView.loadViewFromXib()
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.titleView = headerView
         navigationItem.hidesBackButton = true
         headerView.setupView(title: "", left: "icons8-left-arrow-40", btnTitle: "")
-        
+        signinView.separatorStyle = .none
         signinView.dataSource = self
         signinView.delegate = self
         signinView.register(UINib(nibName:String(describing: SignInTableViewCell.self), bundle: nil), forCellReuseIdentifier:String(describing: SignInTableViewCell.self))
@@ -45,5 +45,7 @@ extension SignInViewController : UITableViewDataSource {
 }
 
 extension SignInViewController : UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return rowHeight
+    }
 }
