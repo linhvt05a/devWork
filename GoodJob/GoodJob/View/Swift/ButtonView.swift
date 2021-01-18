@@ -8,7 +8,9 @@
 import UIKit
 
 class ButtonView: UIView {
-
+    
+    @IBOutlet weak var btnSignup: UIButton!
+    
     class func loadViewFromXib() -> ButtonView {
         return Bundle.main.loadNibNamed("ButtonView", owner: self, options: nil)?.first as! ButtonView
     }

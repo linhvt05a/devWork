@@ -139,17 +139,16 @@
                         <constraint firstItem="U2L-MT-Fke" firstAttribute="centerX" secondItem="awl-U0-wGq" secondAttribute="centerX" id="6EM-nf-2I0"/>
                         <constraint firstItem="oAg-d6-MXh" firstAttribute="top" secondItem="awl-U0-wGq" secondAttribute="top" constant="20" id="8k2-hc-yGY"/>
                         <constraint firstItem="oAg-d6-MXh" firstAttribute="centerX" secondItem="awl-U0-wGq" secondAttribute="centerX" id="EoN-SO-PoL"/>
+                        <constraint firstAttribute="bottom" secondItem="97e-w3-y7J" secondAttribute="bottom" constant="34.5" id="KR8-Xb-3GL"/>
                         <constraint firstItem="Wef-WV-Cox" firstAttribute="top" secondItem="oAg-d6-MXh" secondAttribute="bottom" constant="20" id="Vl1-jA-C2d"/>
                         <constraint firstItem="Wef-WV-Cox" firstAttribute="centerX" secondItem="awl-U0-wGq" secondAttribute="centerX" id="YRh-Pn-ZJB"/>
                         <constraint firstItem="97e-w3-y7J" firstAttribute="top" secondItem="U2L-MT-Fke" secondAttribute="bottom" constant="15" id="glj-i3-lCn"/>
                         <constraint firstItem="97e-w3-y7J" firstAttribute="centerX" secondItem="awl-U0-wGq" secondAttribute="centerX" id="ndO-B4-Kjd"/>
                         <constraint firstItem="U2L-MT-Fke" firstAttribute="top" secondItem="dVw-5k-1Pu" secondAttribute="bottom" constant="10" id="pVY-VN-Lki"/>
                         <constraint firstItem="dVw-5k-1Pu" firstAttribute="top" secondItem="Wef-WV-Cox" secondAttribute="bottom" constant="10" id="ypJ-zS-xE6"/>
-                        <constraint firstAttribute="bottom" secondItem="97e-w3-y7J" secondAttribute="bottom" constant="34.5" id="yt4-UH-tND"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.41314862569999999" green="0.95246258029999997" blue="0.25255685410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="awl-U0-wGq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GN8-Nh-1AS"/>
                 <constraint firstAttribute="trailing" secondItem="awl-U0-wGq" secondAttribute="trailing" id="HjZ-EY-7xt"/>

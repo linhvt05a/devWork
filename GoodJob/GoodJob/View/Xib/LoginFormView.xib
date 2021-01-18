@@ -89,6 +89,13 @@
                 <constraint firstItem="w3l-jw-FXF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xhc-wb-nrZ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnForgot" destination="6hc-kt-OUZ" id="B6E-pK-6Ms"/>
+                <outlet property="btnlogin" destination="15m-9C-Ztt" id="enj-HT-eAp"/>
+                <outlet property="loginView" destination="w3l-jw-FXF" id="lOt-NX-cd1"/>
+                <outlet property="tfEmail" destination="6I6-aq-49g" id="GaE-hE-JZO"/>
+                <outlet property="tfPass" destination="pMx-5k-m78" id="hxz-Bc-Ev3"/>
+            </connections>
             <point key="canvasLocation" x="82.608695652173921" y="-154.01785714285714"/>
         </view>
     </objects>

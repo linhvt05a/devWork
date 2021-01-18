@@ -10,26 +10,26 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BottomLineView" customModule="GoodJob" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="466" height="0.0"/>
+            <rect key="frame" x="0.0" y="0.0" width="466" height="10"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndh-yI-96X">
-                    <rect key="frame" x="41" y="-0.5" width="384" height="1"/>
+                    <rect key="frame" x="41" y="4.5" width="384" height="1"/>
                     <color key="backgroundColor" systemColor="systemGray4Color"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="384" id="5M1-ik-p2H"/>
-                        <constraint firstAttribute="height" constant="1" id="gSt-H9-lsE"/>
+                        <constraint firstAttribute="height" constant="1" id="eCT-gb-TJt"/>
+                        <constraint firstAttribute="width" constant="384" id="sLe-wb-XfK"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="ndh-yI-96X" secondAttribute="bottom" constant="-0.5" id="4wq-cn-cFM"/>
-                <constraint firstItem="ndh-yI-96X" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aQT-nT-TML"/>
-                <constraint firstItem="ndh-yI-96X" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vtk-oe-FzH"/>
+                <constraint firstAttribute="bottom" secondItem="ndh-yI-96X" secondAttribute="bottom" constant="4.5" id="DKj-be-hbm"/>
+                <constraint firstItem="ndh-yI-96X" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TRX-vY-p3s"/>
+                <constraint firstItem="ndh-yI-96X" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="oK0-Jw-zrY"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="94.20289855072464" y="-228.34821428571428"/>
+            <point key="canvasLocation" x="94.20289855072464" y="-251.78571428571428"/>
         </view>
     </objects>
     <resources>

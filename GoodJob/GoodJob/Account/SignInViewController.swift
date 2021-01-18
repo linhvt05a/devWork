@@ -17,7 +17,10 @@ class SignInViewController: UIViewController {
         navigationItem.titleView = headerView
         navigationItem.hidesBackButton = true
         headerView.setupView(title: "", left: "icons8-left-arrow-40", btnTitle: "")
+        headerView.leftBtn.addTarget(self, action: #selector(backToHome), for: .touchUpInside)
         signinView.separatorStyle = .none
+        signinView.showsVerticalScrollIndicator = false
+        
         signinView.dataSource = self
         signinView.delegate = self
         signinView.register(UINib(nibName:String(describing: SignInTableViewCell.self), bundle: nil), forCellReuseIdentifier:String(describing: SignInTableViewCell.self))
@@ -25,6 +28,10 @@ class SignInViewController: UIViewController {
 
     class func create() -> SignInViewController {
         return SignInViewController(nibName: "SignInViewController", bundle: nil)
+    }
+    
+    @objc func backToHome(){
+        self.navigationController?.popViewController(animated: true)
     }
     
    

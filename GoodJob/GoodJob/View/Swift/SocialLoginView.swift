@@ -18,7 +18,7 @@ class SocialLoginView: UIView {
 
     func setupView(){
         containView.shadow = true
-        containView.cornerRadius = 8
-        containView.radius(shadowColor: UIColor.gray.cgColor, shadowOffset: CGSize(width: 2, height: 2), shadowOpacity: 3, shadowRadius: 3, boderWidth: 0.5, boderColor: UIColor.gray.cgColor, backGroundColor: UIColor.white.cgColor)
+        containView.cornerRadius = 12
+        containView.radius(shadowColor: UIColor.gray.cgColor, shadowOffset: CGSize(width: 1, height: 1), shadowOpacity: 0.3, shadowRadius: 2, boderWidth: 0, boderColor: UIColor.gray.cgColor, backGroundColor: UIColor.white.cgColor)
     }
 }

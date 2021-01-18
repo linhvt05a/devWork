@@ -40,7 +40,7 @@ class HeaderView: UIView {
     }
     
     @objc func backHome() {
-        UIApplication.topViewController()?.navigationController?.popViewController(animated: true)
+//        UIApplication.topViewController()?.navigationController?.popViewController(animated: true)
     }
 
 }

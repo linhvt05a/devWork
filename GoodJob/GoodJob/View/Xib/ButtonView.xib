@@ -39,6 +39,9 @@
                 <constraint firstAttribute="bottom" secondItem="2In-Pb-EY3" secondAttribute="bottom" constant="8.5" id="vHq-ys-6lD"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnSignup" destination="2In-Pb-EY3" id="TB7-Bl-cNF"/>
+            </connections>
             <point key="canvasLocation" x="-146.37681159420291" y="-223.32589285714283"/>
         </view>
     </objects>

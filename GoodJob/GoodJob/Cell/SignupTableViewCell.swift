@@ -15,14 +15,25 @@ class SignupTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
-        contentView.backgroundColor = #colorLiteral(red: 0.9572470033, green: 0.9572470033, blue: 0.9572470033, alpha: 1)
-        contentView.addSubview(sociaview)
-        contentView.addSubview(bottomLine)
+        contentView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        sociaview.txtTitle.text = "Đăng ký tài khoản"
+        sociaview.setupView()
+
     }
     
     func setupView() -> CGFloat {
-        contentView.height = sociaview.height
-        sociaview.width = self.width
-        return contentView.height
+       
+        contentView.height = sociaview.height + bottomLine.height
+        contentView.addSubview(sociaview)
+        sociaview.center = self.center
+        sociaview.top = MARGIN_SIZE*4
+       
+        
+        bottomLine.center = self.center
+        bottomLine.top = sociaview.bottom + MARGIN_SIZE*4
+        contentView.addSubview(bottomLine)
+    
+        
+        return contentView.bottom
     }
 }
