@@ -15,7 +15,7 @@ class HomeViewController: UIViewController{
     let headerView = HeaderView.loadViewFromXib()
     let homeView = HomeListView.loadViewFromXib()
     var rowHeight = 0 as CGFloat
-    var arr = ["06577d261edb9ec","","","","","","","","","","","","","","","","","","",""]
+    var arr = ["06577d261edb9ec","logo1","logo2","logo3","logo4","logo5","logo6"]
     var currenIndex = 0
     var jobName  = [MajorModel(majorID: 0, majorName: "-- Tất cả ngành nghề --")]
     var location  = [LocationModel(locID: 0, locName: "-- Tất cả địa điểm --")]
