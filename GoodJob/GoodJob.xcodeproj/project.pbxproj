@@ -20,6 +20,7 @@
 		5B62AAC625B07481006CA057 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62AAC525B07481006CA057 /* HomeListView.swift */; };
 		5B62AACB25B07499006CA057 /* HomeListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B62AACA25B07499006CA057 /* HomeListView.xib */; };
 		5B856DC925B2A0F900AF24FD /* HomeStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B856DC825B2A0F900AF24FD /* HomeStoryBoard.storyboard */; };
+		5B966BB625B6F1DE000DC850 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B966BB525B6F1DE000DC850 /* GoogleService-Info.plist */; };
 		5B9D593A25B5C7B700B4E9F5 /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D593925B5C7B700B4E9F5 /* LoginFormView.swift */; };
 		5B9D593F25B5C7CF00B4E9F5 /* LoginFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D593E25B5C7CF00B4E9F5 /* LoginFormView.xib */; };
 		5B9D594425B5CE2000B4E9F5 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D594325B5CE2000B4E9F5 /* ButtonView.swift */; };
@@ -130,6 +131,7 @@
 		5B62AAC525B07481006CA057 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
 		5B62AACA25B07499006CA057 /* HomeListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeListView.xib; sourceTree = "<group>"; };
 		5B856DC825B2A0F900AF24FD /* HomeStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryBoard.storyboard; sourceTree = "<group>"; };
+		5B966BB525B6F1DE000DC850 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B9D593925B5C7B700B4E9F5 /* LoginFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
 		5B9D593E25B5C7CF00B4E9F5 /* LoginFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginFormView.xib; sourceTree = "<group>"; };
 		5B9D594325B5CE2000B4E9F5 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
@@ -389,6 +391,7 @@
 		5BD66F5C25AFEFE8009D2CDC /* GoodJob */ = {
 			isa = PBXGroup;
 			children = (
+				5B966BB525B6F1DE000DC850 /* GoogleService-Info.plist */,
 				5BD44DF825B4AD5800408853 /* Setting */,
 				5BD44DD925B4A16900408853 /* Tabar */,
 				5BDAEDD325B43AF400F4108B /* Model */,
@@ -534,6 +537,7 @@
 				5BD66F5625AFEFE8009D2CDC /* Sources */,
 				5BD66F5725AFEFE8009D2CDC /* Frameworks */,
 				5BD66F5825AFEFE8009D2CDC /* Resources */,
+				3927602F14479AE589578E60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -571,6 +575,7 @@
 				5BD66F7725AFEFF5009D2CDC /* Sources */,
 				5BD66F7825AFEFF5009D2CDC /* Frameworks */,
 				5BD66F7925AFEFF5009D2CDC /* Resources */,
+				05A8BA97C62447D87F66FC59 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -655,6 +660,7 @@
 				5BF4C01525B59B6F009E7C03 /* SignInViewController.xib in Resources */,
 				5BDAEDF025B4708700F4108B /* ListMoreViewController.xib in Resources */,
 				5BE6CA7125B14D33008CC282 /* SectionHeaderView.xib in Resources */,
+				5B966BB625B6F1DE000DC850 /* GoogleService-Info.plist in Resources */,
 				5B9D594E25B5D0F200B4E9F5 /* SupportAccountView.xib in Resources */,
 				5BE6CA9D25B160BB008CC282 /* JobInternTableViewCell.xib in Resources */,
 				5BD44DF125B4AB5E00408853 /* HistoryViewController.xib in Resources */,
@@ -687,6 +693,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		05A8BA97C62447D87F66FC59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodJob-GoodJobUITests/Pods-GoodJob-GoodJobUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodJob-GoodJobUITests/Pods-GoodJob-GoodJobUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodJob-GoodJobUITests/Pods-GoodJob-GoodJobUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3927602F14479AE589578E60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodJob/Pods-GoodJob-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodJob/Pods-GoodJob-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodJob/Pods-GoodJob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		81F7EFD0F95E457C0FFB7E8F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -980,7 +1020,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = GoodJob.com.GoodJob;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoanglinh.JobsNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1000,7 +1040,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = GoodJob.com.GoodJob;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoanglinh.JobsNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

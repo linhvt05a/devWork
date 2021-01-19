@@ -5,6 +5,16 @@
 //  Created by hoang on 14/01/2021.
 //
 
+#if DEV
+    let SOME_SERVICE_KEY = "SomeKeyForDEV"
+#elseif QA
+    let SOME_SERVICE_KEY = "SomeKeyForQA"
+#elseif STAGE
+    let SOME_SERVICE_KEY = "SomeKeyForSTAGE"
+#else
+    let SOME_SERVICE_KEY = "SomeKeyForPRO"
+#endif
+
 import UIKit
 
 @main
@@ -14,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        print(SOME_SERVICE_KEY)
         return true
     }
 
