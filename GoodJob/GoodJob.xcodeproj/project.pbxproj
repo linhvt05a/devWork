@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		5B2F7C3F25B38E4D0066F2B8 /* JobResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F7C3E25B38E4D0066F2B8 /* JobResultViewController.swift */; };
 		5B62AAC625B07481006CA057 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62AAC525B07481006CA057 /* HomeListView.swift */; };
 		5B62AACB25B07499006CA057 /* HomeListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B62AACA25B07499006CA057 /* HomeListView.xib */; };
+		5B745A1225B70BF900F9F83C /* RegisterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B745A1025B70BF900F9F83C /* RegisterTableViewCell.swift */; };
+		5B745A1325B70BF900F9F83C /* RegisterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B745A1125B70BF900F9F83C /* RegisterTableViewCell.xib */; };
 		5B856DC925B2A0F900AF24FD /* HomeStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B856DC825B2A0F900AF24FD /* HomeStoryBoard.storyboard */; };
 		5B966BB625B6F1DE000DC850 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B966BB525B6F1DE000DC850 /* GoogleService-Info.plist */; };
 		5B9D593A25B5C7B700B4E9F5 /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D593925B5C7B700B4E9F5 /* LoginFormView.swift */; };
@@ -86,8 +88,6 @@
 		5BE6CA9D25B160BB008CC282 /* JobInternTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE6CA9B25B160BB008CC282 /* JobInternTableViewCell.xib */; };
 		5BE6CAA825B1687F008CC282 /* ItemJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE6CAA725B1687F008CC282 /* ItemJobView.swift */; };
 		5BE6CAAD25B16892008CC282 /* ItemJobView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE6CAAC25B16892008CC282 /* ItemJobView.xib */; };
-		5BF4BFF225B551D2009E7C03 /* SignupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4BFF025B551D2009E7C03 /* SignupTableViewCell.swift */; };
-		5BF4BFF325B551D2009E7C03 /* SignupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4BFF125B551D2009E7C03 /* SignupTableViewCell.xib */; };
 		5BF4C00225B5529F009E7C03 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4C00025B5529F009E7C03 /* RegisterViewController.swift */; };
 		5BF4C00325B5529F009E7C03 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4C00125B5529F009E7C03 /* RegisterViewController.xib */; };
 		5BF4C01425B59B6F009E7C03 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4C01225B59B6F009E7C03 /* SignInViewController.swift */; };
@@ -130,6 +130,8 @@
 		5B2F7C3E25B38E4D0066F2B8 /* JobResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobResultViewController.swift; sourceTree = "<group>"; };
 		5B62AAC525B07481006CA057 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
 		5B62AACA25B07499006CA057 /* HomeListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeListView.xib; sourceTree = "<group>"; };
+		5B745A1025B70BF900F9F83C /* RegisterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTableViewCell.swift; sourceTree = "<group>"; };
+		5B745A1125B70BF900F9F83C /* RegisterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterTableViewCell.xib; sourceTree = "<group>"; };
 		5B856DC825B2A0F900AF24FD /* HomeStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryBoard.storyboard; sourceTree = "<group>"; };
 		5B966BB525B6F1DE000DC850 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B9D593925B5C7B700B4E9F5 /* LoginFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
@@ -201,8 +203,6 @@
 		5BE6CA9B25B160BB008CC282 /* JobInternTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobInternTableViewCell.xib; sourceTree = "<group>"; };
 		5BE6CAA725B1687F008CC282 /* ItemJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemJobView.swift; sourceTree = "<group>"; };
 		5BE6CAAC25B16892008CC282 /* ItemJobView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemJobView.xib; sourceTree = "<group>"; };
-		5BF4BFF025B551D2009E7C03 /* SignupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTableViewCell.swift; sourceTree = "<group>"; };
-		5BF4BFF125B551D2009E7C03 /* SignupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupTableViewCell.xib; sourceTree = "<group>"; };
 		5BF4C00025B5529F009E7C03 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5BF4C00125B5529F009E7C03 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		5BF4C01225B59B6F009E7C03 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -272,8 +272,8 @@
 				5BB055BF25B2B01F003EBC81 /* SliderTableViewCell.xib */,
 				5BDAEDB625B4020B00F4108B /* LocationTableViewCell.xib */,
 				5BDAEDCA25B4082200F4108B /* JobTitleTableViewCell.xib */,
-				5BF4BFF125B551D2009E7C03 /* SignupTableViewCell.xib */,
 				5BF4C01A25B5AD3C009E7C03 /* SignInTableViewCell.xib */,
+				5B745A1125B70BF900F9F83C /* RegisterTableViewCell.xib */,
 			);
 			path = CellXib;
 			sourceTree = "<group>";
@@ -327,7 +327,7 @@
 				5BB055BE25B2B01F003EBC81 /* SliderTableViewCell.swift */,
 				5BDAEDB525B4020B00F4108B /* LocationTableViewCell.swift */,
 				5BDAEDC925B4082200F4108B /* JobTitleTableViewCell.swift */,
-				5BF4BFF025B551D2009E7C03 /* SignupTableViewCell.swift */,
+				5B745A1025B70BF900F9F83C /* RegisterTableViewCell.swift */,
 				5BF4C01925B5AD3C009E7C03 /* SignInTableViewCell.swift */,
 			);
 			path = Cell;
@@ -538,6 +538,7 @@
 				5BD66F5725AFEFE8009D2CDC /* Frameworks */,
 				5BD66F5825AFEFE8009D2CDC /* Resources */,
 				3927602F14479AE589578E60 /* [CP] Embed Pods Frameworks */,
+				5B3F030F25B6F5DD000E7A7E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -655,8 +656,8 @@
 				5BE6CAAD25B16892008CC282 /* ItemJobView.xib in Resources */,
 				5BE6CA6425B14B03008CC282 /* JobFavoriteTableViewCell.xib in Resources */,
 				5BF4C01C25B5AD3D009E7C03 /* SignInTableViewCell.xib in Resources */,
-				5BF4BFF325B551D2009E7C03 /* SignupTableViewCell.xib in Resources */,
 				5BDAEDC225B4068B00F4108B /* JobTitleViewController.xib in Resources */,
+				5B745A1325B70BF900F9F83C /* RegisterTableViewCell.xib in Resources */,
 				5BF4C01525B59B6F009E7C03 /* SignInViewController.xib in Resources */,
 				5BDAEDF025B4708700F4108B /* ListMoreViewController.xib in Resources */,
 				5BE6CA7125B14D33008CC282 /* SectionHeaderView.xib in Resources */,
@@ -726,6 +727,25 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodJob/Pods-GoodJob-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5B3F030F25B6F5DD000E7A7E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n\n";
 		};
 		81F7EFD0F95E457C0FFB7E8F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -828,7 +848,6 @@
 				5BDAEDD525B43B2600F4108B /* LocationModel.swift in Sources */,
 				5BDAEDE925B4668000F4108B /* SearchModel.swift in Sources */,
 				5BE6CAA825B1687F008CC282 /* ItemJobView.swift in Sources */,
-				5BF4BFF225B551D2009E7C03 /* SignupTableViewCell.swift in Sources */,
 				5BE6CA5925B14963008CC282 /* JobHotListTableViewCell.swift in Sources */,
 				5BD66F5E25AFEFE8009D2CDC /* AppDelegate.swift in Sources */,
 				5B1BBAC325B1AD7C000BFA55 /* EmployerCollectionViewCell.swift in Sources */,
@@ -846,6 +865,7 @@
 				5BE6CA9525B1609A008CC282 /* JobPartTimeTableViewCell.swift in Sources */,
 				5BD66FC225B00B4D009D2CDC /* Constant.swift in Sources */,
 				5B1BBAB325B1A6AF000BFA55 /* EmployerTableViewCell.swift in Sources */,
+				5B745A1225B70BF900F9F83C /* RegisterTableViewCell.swift in Sources */,
 				5BD8F9DC25B5B077007745C2 /* SocialLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1014,6 +1034,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = M9RXFTNQ3L;
 				INFOPLIST_FILE = GoodJob/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1034,6 +1055,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = M9RXFTNQ3L;
 				INFOPLIST_FILE = GoodJob/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

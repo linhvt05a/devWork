@@ -16,7 +16,7 @@ class JobInternTableViewCell: UITableViewCell {
         contentView.addSubview(itemView)
         
     }
-    func setupView()-> CGFloat {
-        return itemView.height
-    }
-}
+       func setupView()-> CGFloat {
+           return itemView.height
+       }
+   }

@@ -19,10 +19,9 @@ class RegisterViewController: UIViewController {
         headerView.leftBtn.addTarget(self, action: #selector(backHome), for: .touchUpInside)
         signupView.delegate = self
         signupView.dataSource = self
-        signupView.backgroundColor = #colorLiteral(red: 0.9572470033, green: 0.9572470033, blue: 0.9572470033, alpha: 1)
         signupView.showsVerticalScrollIndicator = false
-        signupView.separatorStyle = .none
-        signupView.register(UINib(nibName: String(describing: SignupTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: SignupTableViewCell.self))
+        signupView.separatorStyle = .singleLine
+        signupView.register(UINib(nibName: String(describing: RegisterTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: RegisterTableViewCell.self))
         // Do any additional setup after loading the view.
     }
 
@@ -41,8 +40,8 @@ extension RegisterViewController : UITableViewDelegate , UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SignupTableViewCell.self), for: indexPath) as! SignupTableViewCell
-        rowHeight = cell.setupView()
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RegisterTableViewCell.self), for: indexPath) as! RegisterTableViewCell
+        
         return cell
     }
     

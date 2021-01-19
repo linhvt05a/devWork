@@ -40,9 +40,9 @@ class HomeViewController: UIViewController{
         homeView.center = view.center
         homeView.top = view.top
         homeView.height = view.height
+      
     }
     
- 
     
     override func viewDidAppear(_ animated: Bool) {
         homeView.homeList.reloadData()
