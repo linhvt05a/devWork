@@ -10,8 +10,10 @@ import UIKit
 class SignInViewController: UIViewController {
     
     @IBOutlet weak var signinView: UITableView!
-    var rowHeight = 0 as CGFloat
+
     let headerView = HeaderView.loadViewFromXib()
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.titleView = headerView
@@ -31,7 +33,7 @@ class SignInViewController: UIViewController {
     }
     
     @objc func backToHome(){
-        self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
    
@@ -44,7 +46,7 @@ extension SignInViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SignInTableViewCell.self), for: indexPath) as! SignInTableViewCell
-        rowHeight = cell.setupView()
+        
         return cell
     }
     
@@ -53,6 +55,6 @@ extension SignInViewController : UITableViewDataSource {
 
 extension SignInViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return rowHeight
+        return UITableView.automaticDimension
     }
 }

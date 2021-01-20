@@ -9,7 +9,7 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     let headerView = HeaderView.loadViewFromXib()
-    var rowHeight = 0 as CGFloat
+   
     @IBOutlet weak var signupView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,7 @@ class RegisterViewController: UIViewController {
         signupView.delegate = self
         signupView.dataSource = self
         signupView.showsVerticalScrollIndicator = false
-        signupView.separatorStyle = .singleLine
+        signupView.separatorStyle = .none
         signupView.register(UINib(nibName: String(describing: RegisterTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: RegisterTableViewCell.self))
         // Do any additional setup after loading the view.
     }
@@ -41,12 +41,11 @@ extension RegisterViewController : UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RegisterTableViewCell.self), for: indexPath) as! RegisterTableViewCell
-        
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return rowHeight
+        return UITableView.automaticDimension
     }
 }
