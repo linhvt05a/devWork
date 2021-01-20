@@ -193,3 +193,11 @@ extension UIApplication {
         return viewController
     }
 }
+
+extension UINavigationController {
+    func setNavBar() {
+        let headerView = HeaderView.loadViewFromXib()
+        navigationItem.titleView = headerView
+        navigationItem.hidesBackButton = true
+    }
+}

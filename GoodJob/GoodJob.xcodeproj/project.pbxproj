@@ -10,6 +10,10 @@
 		4ABF7B68DD949170443763DB /* Pods_GoodJobTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1299567870F8FE2A2125E72 /* Pods_GoodJobTests.framework */; };
 		5B15BCBB25B0835A00933BBE /* SearchJobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B15BCB925B0835A00933BBE /* SearchJobTableViewCell.swift */; };
 		5B15BCBC25B0835A00933BBE /* SearchJobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B15BCBA25B0835A00933BBE /* SearchJobTableViewCell.xib */; };
+		5B1A293325B7F6320088AC57 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1A293125B7F6310088AC57 /* ForgotPasswordViewController.swift */; };
+		5B1A293425B7F6320088AC57 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B1A293225B7F6310088AC57 /* ForgotPasswordViewController.xib */; };
+		5B1A294025B811A00088AC57 /* VerifiedPhoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1A293E25B811A00088AC57 /* VerifiedPhoneTableViewCell.swift */; };
+		5B1A294125B811A00088AC57 /* VerifiedPhoneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B1A293F25B811A00088AC57 /* VerifiedPhoneTableViewCell.xib */; };
 		5B1BBAB325B1A6AF000BFA55 /* EmployerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BBAB125B1A6AE000BFA55 /* EmployerTableViewCell.swift */; };
 		5B1BBAB425B1A6AF000BFA55 /* EmployerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B1BBAB225B1A6AF000BFA55 /* EmployerTableViewCell.xib */; };
 		5B1BBAC325B1AD7C000BFA55 /* EmployerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BBAC125B1AD7C000BFA55 /* EmployerCollectionViewCell.swift */; };
@@ -88,6 +92,10 @@
 		5BE6CA9D25B160BB008CC282 /* JobInternTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE6CA9B25B160BB008CC282 /* JobInternTableViewCell.xib */; };
 		5BE6CAA825B1687F008CC282 /* ItemJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE6CAA725B1687F008CC282 /* ItemJobView.swift */; };
 		5BE6CAAD25B16892008CC282 /* ItemJobView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE6CAAC25B16892008CC282 /* ItemJobView.xib */; };
+		5BED1E0A25B8272F00D0CD61 /* OTPverifiedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED1E0825B8272F00D0CD61 /* OTPverifiedViewController.swift */; };
+		5BED1E0B25B8272F00D0CD61 /* OTPverifiedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BED1E0925B8272F00D0CD61 /* OTPverifiedViewController.xib */; };
+		5BED1E1125B827A000D0CD61 /* OTPVerifiedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED1E0F25B827A000D0CD61 /* OTPVerifiedTableViewCell.swift */; };
+		5BED1E1225B827A000D0CD61 /* OTPVerifiedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BED1E1025B827A000D0CD61 /* OTPVerifiedTableViewCell.xib */; };
 		5BF4C00225B5529F009E7C03 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4C00025B5529F009E7C03 /* RegisterViewController.swift */; };
 		5BF4C00325B5529F009E7C03 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4C00125B5529F009E7C03 /* RegisterViewController.xib */; };
 		5BF4C01425B59B6F009E7C03 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4C01225B59B6F009E7C03 /* SignInViewController.swift */; };
@@ -121,6 +129,10 @@
 		1DB7D8E6BDD78953471FF3FF /* Pods_GoodJob_GoodJobUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodJob_GoodJobUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B15BCB925B0835A00933BBE /* SearchJobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchJobTableViewCell.swift; sourceTree = "<group>"; };
 		5B15BCBA25B0835A00933BBE /* SearchJobTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchJobTableViewCell.xib; sourceTree = "<group>"; };
+		5B1A293125B7F6310088AC57 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		5B1A293225B7F6310088AC57 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		5B1A293E25B811A00088AC57 /* VerifiedPhoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedPhoneTableViewCell.swift; sourceTree = "<group>"; };
+		5B1A293F25B811A00088AC57 /* VerifiedPhoneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerifiedPhoneTableViewCell.xib; sourceTree = "<group>"; };
 		5B1BBAB125B1A6AE000BFA55 /* EmployerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerTableViewCell.swift; sourceTree = "<group>"; };
 		5B1BBAB225B1A6AF000BFA55 /* EmployerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployerTableViewCell.xib; sourceTree = "<group>"; };
 		5B1BBAC125B1AD7C000BFA55 /* EmployerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -203,6 +215,10 @@
 		5BE6CA9B25B160BB008CC282 /* JobInternTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobInternTableViewCell.xib; sourceTree = "<group>"; };
 		5BE6CAA725B1687F008CC282 /* ItemJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemJobView.swift; sourceTree = "<group>"; };
 		5BE6CAAC25B16892008CC282 /* ItemJobView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemJobView.xib; sourceTree = "<group>"; };
+		5BED1E0825B8272F00D0CD61 /* OTPverifiedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPverifiedViewController.swift; sourceTree = "<group>"; };
+		5BED1E0925B8272F00D0CD61 /* OTPverifiedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPverifiedViewController.xib; sourceTree = "<group>"; };
+		5BED1E0F25B827A000D0CD61 /* OTPVerifiedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerifiedTableViewCell.swift; sourceTree = "<group>"; };
+		5BED1E1025B827A000D0CD61 /* OTPVerifiedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVerifiedTableViewCell.xib; sourceTree = "<group>"; };
 		5BF4C00025B5529F009E7C03 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5BF4C00125B5529F009E7C03 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		5BF4C01225B59B6F009E7C03 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -274,6 +290,8 @@
 				5BDAEDCA25B4082200F4108B /* JobTitleTableViewCell.xib */,
 				5BF4C01A25B5AD3C009E7C03 /* SignInTableViewCell.xib */,
 				5B745A1125B70BF900F9F83C /* RegisterTableViewCell.xib */,
+				5B1A293F25B811A00088AC57 /* VerifiedPhoneTableViewCell.xib */,
+				5BED1E1025B827A000D0CD61 /* OTPVerifiedTableViewCell.xib */,
 			);
 			path = CellXib;
 			sourceTree = "<group>";
@@ -285,6 +303,10 @@
 				5BF4C00125B5529F009E7C03 /* RegisterViewController.xib */,
 				5BF4C01225B59B6F009E7C03 /* SignInViewController.swift */,
 				5BF4C01325B59B6F009E7C03 /* SignInViewController.xib */,
+				5B1A293125B7F6310088AC57 /* ForgotPasswordViewController.swift */,
+				5B1A293225B7F6310088AC57 /* ForgotPasswordViewController.xib */,
+				5BED1E0825B8272F00D0CD61 /* OTPverifiedViewController.swift */,
+				5BED1E0925B8272F00D0CD61 /* OTPverifiedViewController.xib */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -329,6 +351,8 @@
 				5BDAEDC925B4082200F4108B /* JobTitleTableViewCell.swift */,
 				5B745A1025B70BF900F9F83C /* RegisterTableViewCell.swift */,
 				5BF4C01925B5AD3C009E7C03 /* SignInTableViewCell.swift */,
+				5B1A293E25B811A00088AC57 /* VerifiedPhoneTableViewCell.swift */,
+				5BED1E0F25B827A000D0CD61 /* OTPVerifiedTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -637,14 +661,17 @@
 			files = (
 				5BDAEDE125B4413300F4108B /* JobResultViewController.xib in Resources */,
 				5BA6C24025B1EEA100658BFA /* ScrollableView.xib in Resources */,
+				5BED1E0B25B8272F00D0CD61 /* OTPverifiedViewController.xib in Resources */,
 				5BD66FCA25B01D09009D2CDC /* HeaderView.xib in Resources */,
 				5B9D594925B5CE3000B4E9F5 /* ButtonView.xib in Resources */,
 				5BDAEDCC25B4082200F4108B /* JobTitleTableViewCell.xib in Resources */,
+				5BED1E1225B827A000D0CD61 /* OTPVerifiedTableViewCell.xib in Resources */,
 				5BDAEDB825B4020B00F4108B /* LocationTableViewCell.xib in Resources */,
 				5B15BCBC25B0835A00933BBE /* SearchJobTableViewCell.xib in Resources */,
 				5B9D593F25B5C7CF00B4E9F5 /* LoginFormView.xib in Resources */,
 				5BE6CA8F25B16072008CC282 /* JobITTableViewCell.xib in Resources */,
 				5B856DC925B2A0F900AF24FD /* HomeStoryBoard.storyboard in Resources */,
+				5B1A293425B7F6320088AC57 /* ForgotPasswordViewController.xib in Resources */,
 				5B62AACB25B07499006CA057 /* HomeListView.xib in Resources */,
 				5BD44DE925B4A91C00408853 /* ProfileViewController.xib in Resources */,
 				5BD8F9E125B5B09C007745C2 /* SocialLoginView.xib in Resources */,
@@ -661,6 +688,7 @@
 				5BF4C01525B59B6F009E7C03 /* SignInViewController.xib in Resources */,
 				5BDAEDF025B4708700F4108B /* ListMoreViewController.xib in Resources */,
 				5BE6CA7125B14D33008CC282 /* SectionHeaderView.xib in Resources */,
+				5B1A294125B811A00088AC57 /* VerifiedPhoneTableViewCell.xib in Resources */,
 				5B966BB625B6F1DE000DC850 /* GoogleService-Info.plist in Resources */,
 				5B9D594E25B5D0F200B4E9F5 /* SupportAccountView.xib in Resources */,
 				5BE6CA9D25B160BB008CC282 /* JobInternTableViewCell.xib in Resources */,
@@ -832,6 +860,7 @@
 				5BD8F9E625B5BE9B007745C2 /* BottomLineView.swift in Sources */,
 				5BF4C00225B5529F009E7C03 /* RegisterViewController.swift in Sources */,
 				5B62AAC625B07481006CA057 /* HomeListView.swift in Sources */,
+				5BED1E0A25B8272F00D0CD61 /* OTPverifiedViewController.swift in Sources */,
 				5BE6CA9C25B160BB008CC282 /* JobInternTableViewCell.swift in Sources */,
 				5BDAED8225B395B200F4108B /* JobGroupViewController.swift in Sources */,
 				5B9D595325B5D10E00B4E9F5 /* SupportAccountView.swift in Sources */,
@@ -840,6 +869,7 @@
 				5BF4C01425B59B6F009E7C03 /* SignInViewController.swift in Sources */,
 				5BA6C23B25B1EE4000658BFA /* ScrollableView.swift in Sources */,
 				5BF4C01B25B5AD3D009E7C03 /* SignInTableViewCell.swift in Sources */,
+				5BED1E1125B827A000D0CD61 /* OTPVerifiedTableViewCell.swift in Sources */,
 				5BDAED9F25B3FD7F00F4108B /* JobLocationView.swift in Sources */,
 				5B15BCBB25B0835A00933BBE /* SearchJobTableViewCell.swift in Sources */,
 				5BB055C025B2B01F003EBC81 /* SliderTableViewCell.swift in Sources */,
@@ -850,6 +880,8 @@
 				5BE6CAA825B1687F008CC282 /* ItemJobView.swift in Sources */,
 				5BE6CA5925B14963008CC282 /* JobHotListTableViewCell.swift in Sources */,
 				5BD66F5E25AFEFE8009D2CDC /* AppDelegate.swift in Sources */,
+				5B1A294025B811A00088AC57 /* VerifiedPhoneTableViewCell.swift in Sources */,
+				5B1A293325B7F6320088AC57 /* ForgotPasswordViewController.swift in Sources */,
 				5B1BBAC325B1AD7C000BFA55 /* EmployerCollectionViewCell.swift in Sources */,
 				5BD66F6025AFEFE9009D2CDC /* SceneDelegate.swift in Sources */,
 				5BDAEDCB25B4082200F4108B /* JobTitleTableViewCell.swift in Sources */,

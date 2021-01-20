@@ -17,4 +17,6 @@ extension UIView {
 let MARGIN_SIZE = 5 as CGFloat
 let W = UIScreen.main.bounds.width
 let H = UIScreen.main.bounds.height
+let Navigate = UIApplication.topViewController()  
+
 

@@ -36,17 +36,18 @@ class SignInTableViewCell: UITableViewCell {
         btnFogotPass.addTarget(self, action: #selector(userForgot), for: .touchUpInside)
     }
     
-    @objc func gotoSignup(){
+    @objc private func gotoSignup(){
         let signupVC = RegisterViewController.create()
-        UIApplication.topViewController()?.navigationController?.pushViewController(signupVC, animated: true)
+        Navigate?.navigationController?.pushViewController(signupVC, animated: true)
     }
     
-    @objc func userLogin(){
-        print("")
+    @objc fileprivate func userLogin(){
+       
     }
     
-    @objc func userForgot(){
-        print("")
+    @objc fileprivate func userForgot(){
+        let forgotVc = ForgotPasswordViewController.create()
+        Navigate?.navigationController?.pushViewController(forgotVc, animated: true)
     }
     
     @objc func userFace(){

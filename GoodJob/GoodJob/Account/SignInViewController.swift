@@ -18,6 +18,7 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.titleView = headerView
         navigationItem.hidesBackButton = true
+        
         headerView.setupView(title: "", left: "icons8-left-arrow-40", btnTitle: "")
         headerView.leftBtn.addTarget(self, action: #selector(backToHome), for: .touchUpInside)
         signinView.separatorStyle = .none

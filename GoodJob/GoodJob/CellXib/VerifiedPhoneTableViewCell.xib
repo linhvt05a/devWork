@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="217" id="KGk-i7-Jjw" customClass="VerifiedPhoneTableViewCell" customModule="GoodJob" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vui lòng nhập số điện thoại của bạn:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63P-jl-uZR">
+                        <rect key="frame" x="10" y="18" width="300" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="1LE-S4-Olg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ví dụ:  (+84) 869060808" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SCa-bR-imk">
+                        <rect key="frame" x="7.5" y="54" width="305" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="305" id="Y1v-xG-Df3"/>
+                            <constraint firstAttribute="height" constant="40" id="ahS-fu-YoM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldU-Vs-Lrf">
+                        <rect key="frame" x="7.5" y="112" width="305" height="42"/>
+                        <color key="backgroundColor" red="0.20015628611603928" green="0.58569509255118057" blue="0.12356698391936696" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="305" id="96q-LH-9pY"/>
+                            <constraint firstAttribute="height" constant="42" id="gPL-b2-0p3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <state key="normal" title="Nhận OTP">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Một tin nhắn sẽ được gửi đến số điện thoại: 0869060808 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbq-v3-uKW">
+                        <rect key="frame" x="10" y="169" width="300" height="31.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="JIJ-Gb-X32"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="63P-jl-uZR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="4Pb-BX-tZW"/>
+                    <constraint firstItem="ldU-Vs-Lrf" firstAttribute="top" secondItem="SCa-bR-imk" secondAttribute="bottom" constant="18" id="8ve-bK-cSe"/>
+                    <constraint firstItem="63P-jl-uZR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="BAX-WC-zaf"/>
+                    <constraint firstItem="SCa-bR-imk" firstAttribute="top" secondItem="63P-jl-uZR" secondAttribute="bottom" constant="20" id="D81-W6-IlP"/>
+                    <constraint firstItem="ldU-Vs-Lrf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Nih-bx-rrX"/>
+                    <constraint firstItem="Tbq-v3-uKW" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="TVl-xx-EXd"/>
+                    <constraint firstItem="SCa-bR-imk" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="p28-Do-bWo"/>
+                    <constraint firstItem="Tbq-v3-uKW" firstAttribute="top" secondItem="ldU-Vs-Lrf" secondAttribute="bottom" constant="15" id="uke-LQ-A0y"/>
+                    <constraint firstAttribute="bottom" secondItem="Tbq-v3-uKW" secondAttribute="bottom" constant="16.5" id="vti-LH-g9Y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="sendOTP" destination="ldU-Vs-Lrf" id="Gxj-89-HHY"/>
+                <outlet property="tfPhone" destination="SCa-bR-imk" id="43G-OU-coE"/>
+                <outlet property="txtRequire" destination="Tbq-v3-uKW" id="0wM-xr-gDi"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="113.50446428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
