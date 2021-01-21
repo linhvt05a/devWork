@@ -21,6 +21,13 @@
 		5B2F7C3225B38C650066F2B8 /* JobLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F7C3125B38C650066F2B8 /* JobLocationViewController.swift */; };
 		5B2F7C3A25B38CB70066F2B8 /* JobTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F7C3925B38CB70066F2B8 /* JobTitleViewController.swift */; };
 		5B2F7C3F25B38E4D0066F2B8 /* JobResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F7C3E25B38E4D0066F2B8 /* JobResultViewController.swift */; };
+		5B50225925B918C000BBAE63 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50225725B918C000BBAE63 /* ProfileTableViewCell.swift */; };
+		5B50225A25B918C000BBAE63 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B50225825B918C000BBAE63 /* ProfileTableViewCell.xib */; };
+		5B50226325B92EBF00BBAE63 /* ProfileAddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50226125B92EBF00BBAE63 /* ProfileAddTableViewCell.swift */; };
+		5B50226425B92EBF00BBAE63 /* ProfileAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B50226225B92EBF00BBAE63 /* ProfileAddTableViewCell.xib */; };
+		5B50226C25B933B600BBAE63 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50226B25B933B600BBAE63 /* ProfileModel.swift */; };
+		5B50227225B949D600BBAE63 /* AddSkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50227025B949D500BBAE63 /* AddSkillViewController.swift */; };
+		5B50227325B949D600BBAE63 /* AddSkillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B50227125B949D500BBAE63 /* AddSkillViewController.xib */; };
 		5B62AAC625B07481006CA057 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62AAC525B07481006CA057 /* HomeListView.swift */; };
 		5B62AACB25B07499006CA057 /* HomeListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B62AACA25B07499006CA057 /* HomeListView.xib */; };
 		5B745A1225B70BF900F9F83C /* RegisterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B745A1025B70BF900F9F83C /* RegisterTableViewCell.swift */; };
@@ -140,6 +147,13 @@
 		5B2F7C3125B38C650066F2B8 /* JobLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobLocationViewController.swift; sourceTree = "<group>"; };
 		5B2F7C3925B38CB70066F2B8 /* JobTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTitleViewController.swift; sourceTree = "<group>"; };
 		5B2F7C3E25B38E4D0066F2B8 /* JobResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobResultViewController.swift; sourceTree = "<group>"; };
+		5B50225725B918C000BBAE63 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		5B50225825B918C000BBAE63 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		5B50226125B92EBF00BBAE63 /* ProfileAddTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAddTableViewCell.swift; sourceTree = "<group>"; };
+		5B50226225B92EBF00BBAE63 /* ProfileAddTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileAddTableViewCell.xib; sourceTree = "<group>"; };
+		5B50226B25B933B600BBAE63 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		5B50227025B949D500BBAE63 /* AddSkillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSkillViewController.swift; sourceTree = "<group>"; };
+		5B50227125B949D500BBAE63 /* AddSkillViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSkillViewController.xib; sourceTree = "<group>"; };
 		5B62AAC525B07481006CA057 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
 		5B62AACA25B07499006CA057 /* HomeListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeListView.xib; sourceTree = "<group>"; };
 		5B745A1025B70BF900F9F83C /* RegisterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTableViewCell.swift; sourceTree = "<group>"; };
@@ -292,6 +306,8 @@
 				5B745A1125B70BF900F9F83C /* RegisterTableViewCell.xib */,
 				5B1A293F25B811A00088AC57 /* VerifiedPhoneTableViewCell.xib */,
 				5BED1E1025B827A000D0CD61 /* OTPVerifiedTableViewCell.xib */,
+				5B50225825B918C000BBAE63 /* ProfileTableViewCell.xib */,
+				5B50226225B92EBF00BBAE63 /* ProfileAddTableViewCell.xib */,
 			);
 			path = CellXib;
 			sourceTree = "<group>";
@@ -353,6 +369,8 @@
 				5BF4C01925B5AD3C009E7C03 /* SignInTableViewCell.swift */,
 				5B1A293E25B811A00088AC57 /* VerifiedPhoneTableViewCell.swift */,
 				5BED1E0F25B827A000D0CD61 /* OTPVerifiedTableViewCell.swift */,
+				5B50225725B918C000BBAE63 /* ProfileTableViewCell.swift */,
+				5B50226125B92EBF00BBAE63 /* ProfileAddTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -370,6 +388,8 @@
 			children = (
 				5BD44DE625B4A91C00408853 /* ProfileViewController.swift */,
 				5BD44DE725B4A91C00408853 /* ProfileViewController.xib */,
+				5B50227025B949D500BBAE63 /* AddSkillViewController.swift */,
+				5B50227125B949D500BBAE63 /* AddSkillViewController.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -494,6 +514,7 @@
 				5BDAEDD425B43B2500F4108B /* LocationModel.swift */,
 				5BDAEDD925B43B8700F4108B /* MajorModel.swift */,
 				5BDAEDE825B4667F00F4108B /* SearchModel.swift */,
+				5B50226B25B933B600BBAE63 /* ProfileModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -668,8 +689,10 @@
 				5BED1E1225B827A000D0CD61 /* OTPVerifiedTableViewCell.xib in Resources */,
 				5BDAEDB825B4020B00F4108B /* LocationTableViewCell.xib in Resources */,
 				5B15BCBC25B0835A00933BBE /* SearchJobTableViewCell.xib in Resources */,
+				5B50225A25B918C000BBAE63 /* ProfileTableViewCell.xib in Resources */,
 				5B9D593F25B5C7CF00B4E9F5 /* LoginFormView.xib in Resources */,
 				5BE6CA8F25B16072008CC282 /* JobITTableViewCell.xib in Resources */,
+				5B50227325B949D600BBAE63 /* AddSkillViewController.xib in Resources */,
 				5B856DC925B2A0F900AF24FD /* HomeStoryBoard.storyboard in Resources */,
 				5B1A293425B7F6320088AC57 /* ForgotPasswordViewController.xib in Resources */,
 				5B62AACB25B07499006CA057 /* HomeListView.xib in Resources */,
@@ -697,6 +720,7 @@
 				5BD66F6A25AFEFF3009D2CDC /* LaunchScreen.storyboard in Resources */,
 				5B1BBAB425B1A6AF000BFA55 /* EmployerTableViewCell.xib in Resources */,
 				5BE6CA5A25B14963008CC282 /* JobHotListTableViewCell.xib in Resources */,
+				5B50226425B92EBF00BBAE63 /* ProfileAddTableViewCell.xib in Resources */,
 				5BE6CA9625B1609A008CC282 /* JobPartTimeTableViewCell.xib in Resources */,
 				5BE6CA7B25B15E42008CC282 /* JobHightSalaryTableViewCell.xib in Resources */,
 				5BA6C24A25B1F0F500658BFA /* ScrollViewCollectionViewCell.xib in Resources */,
@@ -857,6 +881,8 @@
 				5B9D594425B5CE2000B4E9F5 /* ButtonView.swift in Sources */,
 				5BDAEDB725B4020B00F4108B /* LocationTableViewCell.swift in Sources */,
 				5BB055AF25B2A9F7003EBC81 /* GoodJob.swift in Sources */,
+				5B50226C25B933B600BBAE63 /* ProfileModel.swift in Sources */,
+				5B50225925B918C000BBAE63 /* ProfileTableViewCell.swift in Sources */,
 				5BD8F9E625B5BE9B007745C2 /* BottomLineView.swift in Sources */,
 				5BF4C00225B5529F009E7C03 /* RegisterViewController.swift in Sources */,
 				5B62AAC625B07481006CA057 /* HomeListView.swift in Sources */,
@@ -872,6 +898,7 @@
 				5BED1E1125B827A000D0CD61 /* OTPVerifiedTableViewCell.swift in Sources */,
 				5BDAED9F25B3FD7F00F4108B /* JobLocationView.swift in Sources */,
 				5B15BCBB25B0835A00933BBE /* SearchJobTableViewCell.swift in Sources */,
+				5B50226325B92EBF00BBAE63 /* ProfileAddTableViewCell.swift in Sources */,
 				5BB055C025B2B01F003EBC81 /* SliderTableViewCell.swift in Sources */,
 				5BE6CA7A25B15E42008CC282 /* JobHightSalaryTableViewCell.swift in Sources */,
 				5BD44DD525B494E600408853 /* ScrollViewCollectionViewCell.swift in Sources */,
@@ -881,6 +908,7 @@
 				5BE6CA5925B14963008CC282 /* JobHotListTableViewCell.swift in Sources */,
 				5BD66F5E25AFEFE8009D2CDC /* AppDelegate.swift in Sources */,
 				5B1A294025B811A00088AC57 /* VerifiedPhoneTableViewCell.swift in Sources */,
+				5B50227225B949D600BBAE63 /* AddSkillViewController.swift in Sources */,
 				5B1A293325B7F6320088AC57 /* ForgotPasswordViewController.swift in Sources */,
 				5B1BBAC325B1AD7C000BFA55 /* EmployerCollectionViewCell.swift in Sources */,
 				5BD66F6025AFEFE9009D2CDC /* SceneDelegate.swift in Sources */,

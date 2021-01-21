@@ -7,31 +7,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="GoodJob" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddSkillViewController" customModule="GoodJob" customModuleProvider="target">
             <connections>
-                <outlet property="profileList" destination="Hx7-ZV-MOO" id="k46-D4-GGN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="299"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hx7-ZV-MOO">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </tableView>
-            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstAttribute="bottom" secondItem="Hx7-ZV-MOO" secondAttribute="bottom" id="7eD-s9-xPZ"/>
-                <constraint firstItem="Hx7-ZV-MOO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SOf-Sf-GAn"/>
-                <constraint firstItem="Hx7-ZV-MOO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XnA-gW-0LI"/>
-                <constraint firstAttribute="trailing" secondItem="Hx7-ZV-MOO" secondAttribute="trailing" id="wF0-eR-JA0"/>
-            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="132" y="64"/>
+            <point key="canvasLocation" x="131.8840579710145" y="-150.33482142857142"/>
         </view>
     </objects>
     <resources>

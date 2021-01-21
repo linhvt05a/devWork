@@ -7,7 +7,6 @@
 
 import UIKit
 import FirebaseCore
-import FirebaseAuth
 
 class VerifiedPhoneTableViewCell: UITableViewCell {
     @IBOutlet weak var tfPhone: UITextField!
