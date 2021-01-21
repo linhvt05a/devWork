@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ProfileAddTableViewCell: UITableViewCell {
 
@@ -29,9 +30,9 @@ class ProfileAddTableViewCell: UITableViewCell {
         self.professionID = index
         self.professionTitle = data.title
         
-            self.titles.text = data.title
-            self.des.text = data.description
-            self.imageUrl.image = UIImage(named: data.imageUrl)
+        self.titles.text = data.title
+        self.des.text = data.description
+        self.imageUrl.sd_setImage(with: URL(string: data.imageUrl), placeholderImage: UIImage(named: "placeholder.png"))
         
         addQuanlifi.addTarget(self, action: #selector(add), for: .touchUpInside)
     }

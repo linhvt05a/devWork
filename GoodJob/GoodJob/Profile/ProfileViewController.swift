@@ -35,6 +35,7 @@ class ProfileViewController: UIViewController {
     func config(){
         profileList.delegate = self
         profileList.dataSource = self
+        profileList.separatorStyle = .none
         profileList.showsVerticalScrollIndicator = false
         profileList.register(UINib(nibName: String(describing:ProfileTableViewCell.self ), bundle: nil), forCellReuseIdentifier: String(describing: ProfileTableViewCell.self))
         profileList.register(UINib(nibName: String(describing:ProfileAddTableViewCell.self ), bundle: nil), forCellReuseIdentifier: String(describing: ProfileAddTableViewCell.self))

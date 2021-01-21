@@ -9,21 +9,20 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="290" id="KGk-i7-Jjw" customClass="ProfileTableViewCell" customModule="GoodJob" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="246" id="KGk-i7-Jjw" customClass="ProfileTableViewCell" customModule="GoodJob" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="246"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="246"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yzH-zR-pys">
-                        <rect key="frame" x="10" y="15" width="355" height="260"/>
+                        <rect key="frame" x="10" y="10" width="355" height="226"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kfb-53-InB">
-                                <rect key="frame" x="0.0" y="0.0" width="355" height="146"/>
+                                <rect key="frame" x="0.0" y="0.0" width="355" height="136"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="146" id="2kz-MO-C0z"/>
-                                    <constraint firstAttribute="width" constant="355" id="s7E-Nq-F9O"/>
+                                    <constraint firstAttribute="height" constant="136" id="haz-LE-9Qo"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
@@ -33,10 +32,10 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="NTc-aj-fP5">
-                                <rect key="frame" x="127.5" y="96" width="100" height="100"/>
+                                <rect key="frame" x="127.5" y="86" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="TxI-TC-EyS"/>
-                                    <constraint firstAttribute="height" constant="100" id="qhE-ws-2N2"/>
+                                    <constraint firstAttribute="width" constant="100" id="g7r-ZQ-BGt"/>
+                                    <constraint firstAttribute="height" constant="100" id="t9y-nn-ytk"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -46,7 +45,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoang Quang Linh" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pk-LI-N1l">
-                                <rect key="frame" x="103" y="211" width="149.5" height="35.5"/>
+                                <rect key="frame" x="103" y="196" width="149.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,13 +53,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Kfb-53-InB" firstAttribute="top" secondItem="yzH-zR-pys" secondAttribute="top" id="DRt-f7-hEj"/>
-                            <constraint firstItem="NTc-aj-fP5" firstAttribute="centerX" secondItem="Kfb-53-InB" secondAttribute="centerX" id="FkX-zy-qsy"/>
-                            <constraint firstItem="Kfb-53-InB" firstAttribute="centerX" secondItem="yzH-zR-pys" secondAttribute="centerX" id="Flf-dZ-HSI"/>
-                            <constraint firstItem="1Pk-LI-N1l" firstAttribute="centerX" secondItem="NTc-aj-fP5" secondAttribute="centerX" id="Nst-l4-NNf"/>
-                            <constraint firstItem="NTc-aj-fP5" firstAttribute="bottom" secondItem="Kfb-53-InB" secondAttribute="bottom" constant="50" id="OfQ-0t-Nd5"/>
-                            <constraint firstItem="1Pk-LI-N1l" firstAttribute="top" secondItem="NTc-aj-fP5" secondAttribute="bottom" constant="15" id="TXB-dL-KN9"/>
-                            <constraint firstAttribute="bottom" secondItem="1Pk-LI-N1l" secondAttribute="bottom" constant="13.5" id="ZL3-HV-4XR"/>
+                            <constraint firstAttribute="bottom" secondItem="1Pk-LI-N1l" secondAttribute="bottom" constant="9.5" id="1L3-Lz-dpS"/>
+                            <constraint firstItem="Kfb-53-InB" firstAttribute="top" secondItem="yzH-zR-pys" secondAttribute="top" id="9ro-Eq-74L"/>
+                            <constraint firstItem="NTc-aj-fP5" firstAttribute="centerX" secondItem="yzH-zR-pys" secondAttribute="centerX" id="DFM-FR-OWU"/>
+                            <constraint firstItem="Kfb-53-InB" firstAttribute="leading" secondItem="yzH-zR-pys" secondAttribute="leading" id="JQp-kS-XKi"/>
+                            <constraint firstItem="1Pk-LI-N1l" firstAttribute="centerX" secondItem="NTc-aj-fP5" secondAttribute="centerX" id="N0C-Zd-Y9W"/>
+                            <constraint firstItem="NTc-aj-fP5" firstAttribute="bottom" secondItem="Kfb-53-InB" secondAttribute="bottom" constant="50" id="bLX-3h-gq7"/>
+                            <constraint firstItem="1Pk-LI-N1l" firstAttribute="top" secondItem="NTc-aj-fP5" secondAttribute="bottom" constant="10" id="knf-kl-JHI"/>
+                            <constraint firstAttribute="trailing" secondItem="Kfb-53-InB" secondAttribute="trailing" id="vTm-qf-edL"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
@@ -72,13 +72,13 @@
                 </subviews>
                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="yzH-zR-pys" secondAttribute="trailing" constant="10" id="4OK-9X-NrD"/>
-                    <constraint firstItem="yzH-zR-pys" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ihe-xl-QWi"/>
-                    <constraint firstAttribute="bottom" secondItem="yzH-zR-pys" secondAttribute="bottom" constant="15" id="Yy7-WR-wHs"/>
-                    <constraint firstItem="yzH-zR-pys" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="deO-SJ-nrX"/>
+                    <constraint firstAttribute="trailing" secondItem="yzH-zR-pys" secondAttribute="trailing" constant="10" id="3uK-Po-NW3"/>
+                    <constraint firstItem="yzH-zR-pys" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eqo-D3-9mN"/>
+                    <constraint firstItem="yzH-zR-pys" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fx5-C9-IYQ"/>
+                    <constraint firstAttribute="bottom" secondItem="yzH-zR-pys" secondAttribute="bottom" constant="10" id="uld-oe-FzV"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="74.637681159420296" y="159.375"/>
+            <point key="canvasLocation" x="74.637681159420296" y="144.64285714285714"/>
         </tableViewCell>
     </objects>
     <resources>

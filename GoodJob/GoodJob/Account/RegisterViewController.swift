@@ -30,7 +30,7 @@ class RegisterViewController: UIViewController {
     }
 
     @objc func backHome() {
-        UIApplication.topViewController()?.navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: true)
     }
 }
 
